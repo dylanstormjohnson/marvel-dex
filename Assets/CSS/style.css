@@ -1,0 +1,30 @@
+nav {
+    font-size: 100px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 100px;
+}
+
+img {
+    max-width: 100%;
+    background-color: purple;
+}
+
+#img-div {
+    position: relative;
+    padding: 0px;
+}
+
+#addToTeam {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: 5px;
+    right: 10px;
+}
+
+#specialPlacesText {
+    background-color: purple;
+    height: 100px; 
+    width: 70%;
+}
