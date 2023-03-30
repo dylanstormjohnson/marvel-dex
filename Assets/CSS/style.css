@@ -24,9 +24,15 @@ img {
 }
 
 #specialPlacesText {
-    background-color: purple;
+    text-align: center;
     height: 100px; 
     width: 70%;
+    border: 5px groove black;
+}
+
+#GoogleMapWidget {
+    height: 200px; 
+    width: 200px; 
 }
   
 
