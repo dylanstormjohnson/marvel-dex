@@ -1,9 +1,9 @@
-nav {
+/* nav {
     font-size: 100px;
     padding: 0px;
     margin: 0px;
     line-height: 100px;
-}
+} */
 
 img {
     max-width: 100%;
@@ -30,3 +30,26 @@ img {
 }
   
 
+#imgNavBar {
+  width: 20%;
+  height: 20%;
+  border-radius: 5px;
+}
+
+#imgXForce, #imgXMen, #imgAvengers, #imgGuardians {
+  width: 40%;
+  height: 50%;
+}
+
+@media screen and (max-width: 586px){ 
+  #site-search {
+    font-size: 10px;
+    }
+  #searchBtn {
+    font-size:14px;
+  }
+  #searchSite {
+    font-size: 20px;
+  }
+
+  }
