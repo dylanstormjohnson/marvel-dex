@@ -1,9 +1,34 @@
-/* nav {
-    font-size: 100px;
-    padding: 0px;
-    margin: 0px;
-    line-height: 100px;
-} */
+*{
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Marvel', sans-serif;
+
+}
+
+body{
+  margin:0 auto;
+  padding:0;
+}
+
+nav ul {
+  list-style-type: none;
+  display:flex;
+  align-items: center;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: white;
+}
+
+#custom-navBar {
+  background: rgb(8,0,1);
+  background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
+  color: white;
+  
+  /* width: 100%;
+  left: 0px;
+  right: 0px; */
+}
 
 img {
     max-width: 100%;
@@ -58,4 +83,11 @@ img {
     font-size: 20px;
   }
 
+  }
+
+  #marvelLink {
+    position: absolute;
+    right:0;
+    text-align: right;
+    padding-right: 20px;
   }
