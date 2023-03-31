@@ -50,6 +50,11 @@ wikipedia();
 getCharData("wolverine");
 
 
+
+
+
+
+
 var dropdownNavBtn = $("#dropdownNavBtn")
 
 
