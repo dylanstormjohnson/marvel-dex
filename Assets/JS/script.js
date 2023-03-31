@@ -48,3 +48,16 @@ console.log("test");
 
 wikipedia();
 getCharData("wolverine");
+
+
+
+
+
+
+
+var dropdownNavBtn = $("#dropdownNavBtn")
+
+
+dropdownNavBtn.on("click", function(){
+  
+})
