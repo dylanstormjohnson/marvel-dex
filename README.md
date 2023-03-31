@@ -1,6 +1,8 @@
 # marvel-dex
 A Pokédex for Marvel Characters!!!!!!!
 
+char-bio-add
+=======
 
 Marvel.dex: 
 Working Name: Marvel-dex
@@ -34,5 +36,4 @@ https://developer.marvel.com/documentation/attribution
 "Data provided by Marvel. © 2014 Marvel"
 
 
-
-
+main

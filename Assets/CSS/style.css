@@ -1,0 +1,93 @@
+*{
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Marvel', sans-serif;
+
+}
+
+body{
+  margin:0 auto;
+  padding:0;
+}
+
+nav ul {
+  list-style-type: none;
+  display:flex;
+  align-items: center;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: white;
+}
+
+#custom-navBar {
+  background: rgb(8,0,1);
+  background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
+  color: white;
+  
+  /* width: 100%;
+  left: 0px;
+  right: 0px; */
+}
+
+img {
+    max-width: 100%;
+    background-color: purple;
+}
+
+#img-div {
+    position: relative;
+    padding: 0px;
+}
+
+#addToTeam {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: 5px;
+    right: 10px;
+}
+
+#specialPlacesText {
+    text-align: center;
+    height: 100px; 
+    width: 70%;
+    border: 5px groove black;
+}
+
+#GoogleMapWidget {
+    height: 200px; 
+    width: 200px; 
+}
+  
+
+#imgNavBar {
+  width: 20%;
+  height: 20%;
+  border-radius: 5px;
+}
+
+#imgXForce, #imgXMen, #imgAvengers, #imgGuardians {
+  width: 40%;
+  height: 50%;
+}
+
+@media screen and (max-width: 586px){ 
+  #site-search {
+    font-size: 10px;
+    }
+  #searchBtn {
+    font-size:14px;
+  }
+  #searchSite {
+    font-size: 20px;
+  }
+
+  }
+
+  #marvelLink {
+    position: absolute;
+    right:0;
+    text-align: right;
+    padding-right: 20px;
+  }
