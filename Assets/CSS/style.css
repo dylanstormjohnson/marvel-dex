@@ -1,6 +1,7 @@
 *{
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
+  overflow-x: hidden;
 
 }
 
@@ -14,33 +15,37 @@ body{
   padding:0;
 }
 
-nav ul {
-  list-style-type: none;
-  display:flex;
-  align-items: center;
+
+img {
+    max-width: 100%;
+    background-color: purple;
 }
 
-nav ul a{
-  text-decoration: none;
-  color: white;
-  display:block;
+#img-div {
+    position: relative;
+    padding: 0px;
 }
 
-nav ul a:hover{
-  color:rgb(149, 110, 110);
+#addToTeam {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: 5px;
+    right: 10px;
 }
 
-#custom-navBar {
-  background: rgb(8,0,1);
-  background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
-  color: white;
+#specialPlacesText {
+    text-align: center;
+    height: 100px; 
+    width: 70%;
+    border: 5px groove black;
 }
 
-#imgNavBar {
-  width: 20%;
-  height: 20%;
-  border-radius: 5px;
+#GoogleMapWidget {
+    height: 200px; 
+    width: 200px; 
 }
+
 
 #imgXForce, #imgXMen, #imgAvengers, #imgGuardians {
   width: 40%;
@@ -67,14 +72,8 @@ nav ul a:hover{
     padding-right: 20px;
   }
 
-  /* #dropdown{
 
+  #marvelTeams a {
+    text-decoration: none;
+    color: black;
   }
-
-  #marvelTeamsBtn{
-
-  }
-
-  #dropdown-content{
-
-  } */

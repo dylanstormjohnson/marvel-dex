@@ -1,7 +1,6 @@
 
-var dropdownNavBtn = $("#dropdownNavBtn")
 
 
-dropdownNavBtn.on("click", function(){
-  
-})
+// $(document).ready(function() {
+//     $("#marvelTeamsNavBar-toggle").dropdown();
+// });

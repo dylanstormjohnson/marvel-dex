@@ -1,0 +1,117 @@
+*{
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Marvel', sans-serif;
+  overflow-x: hidden;
+
+
+}
+
+main, footer {
+  background: rgb(244,232,234);
+  background: linear-gradient(0deg, rgba(244,232,234,1) 0%, rgba(247,217,210,1) 35%, rgba(187,75,91,0.38139005602240894) 100%);
+}
+
+body{ 
+  margin:0 auto;
+  padding:0;
+}
+
+nav ul {
+  list-style-type: none;
+  display:flex;
+  align-items: center;
+}
+
+nav ul a{
+  float:left;
+  text-align:center;
+  text-decoration: none;
+  color: white;
+  display:block;
+}
+
+nav ul a:hover{
+  color:rgb(149, 110, 110);
+}
+
+#custom-navBar {
+  background: rgb(8,0,1);
+  background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
+  color: white;
+  overflow: hidden;
+
+  /* width: 100%;
+  left: 0px;
+  right: 0px; */
+}
+
+#navbar {
+  overflow: hidden;
+    /* container-fluid */
+}
+
+
+#marvelTeamsNavBar{
+  float:left;
+  overflow:hidden;
+}
+
+
+#dropdownNavBtn, #marvelTeamsNavBar{
+  border:none;
+  outline:none;
+  font-family: inherit;
+  background-color: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin:0;
+}
+
+
+#dropdown-menu{
+  display: none;
+  position:absolute;
+  background-color: inherit;  
+  /* check color */
+  max-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color:rgb(246, 204, 204);
+
+
+}
+
+#dropdown-menu a{
+  float:none;
+  color:black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+
+
+}
+
+#marvelTeamsNavBar:hover #dropdown-menu {
+  display: block;
+
+}
+
+/* #dropdownNavBtn:hover{
+  overflow:visible;
+} */
+
+/* #dropdown-menu a:hover{
+  background-color: white;
+} */
+
+#dropdown-item {
+  background-color: white;
+}
+
+#imgNavBar {
+  width: 20%;
+  height: 20%;
+  border-radius: 5px;
+}
+
