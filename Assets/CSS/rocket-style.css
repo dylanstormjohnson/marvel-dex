@@ -1,0 +1,56 @@
+img {
+    max-width: 100%;
+    background-color: purple;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px black;
+}
+
+#img-div {
+    position: relative;
+    padding: 40px 0px 0px 0px;
+}
+
+#addToTeam {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: 10px;
+    right: 15px;
+}
+
+#specialPlacesText {
+    text-align: center;
+    height: 100px; 
+    width: 70%;
+    border: 5px groove black;
+}
+
+#GoogleMaps {
+    padding-top:2vw;
+}
+
+#GoogleMapWidget {
+    height: 200px; 
+    width: 200px; 
+}
+
+#description{
+    font-size: calc(16px + .5vw);
+}
+
+h3 {
+    text-align: center;
+    font-size: calc(40px + .3vw);
+    background-color: rgb(21, 108, 201);
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding: 0px 10px 0px 10px;
+    border: 5px ridge rgb(123, 119, 152);
+    box-shadow: 5px 5px 5px rgb(110, 109, 109);
+}
+
+#description {
+    padding: 10px 40px 0px 40px;
+    margin-left: 10px;
+}
