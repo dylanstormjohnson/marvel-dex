@@ -1,6 +1,8 @@
 *{
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
+  overflow-x: hidden;
+
 
 }
 
@@ -23,7 +25,6 @@ nav ul {
 nav ul a{
   float:left;
   text-align:center;
-
   text-decoration: none;
   color: white;
   display:block;
@@ -96,9 +97,9 @@ nav ul a:hover{
 
 }
 
-#dropdownNavBtn:hover{
+/* #dropdownNavBtn:hover{
   overflow:visible;
-}
+} */
 
 /* #dropdown-menu a:hover{
   background-color: white;
@@ -113,3 +114,4 @@ nav ul a:hover{
   height: 20%;
   border-radius: 5px;
 }
+

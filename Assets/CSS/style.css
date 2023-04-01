@@ -1,6 +1,7 @@
 *{
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
+  overflow-x: hidden;
 
 }
 
@@ -71,3 +72,8 @@ img {
     padding-right: 20px;
   }
 
+
+  #marvelTeams a {
+    text-decoration: none;
+    color: black;
+  }
