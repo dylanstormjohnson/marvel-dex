@@ -10,6 +10,10 @@ img {
     padding: 40px 15px 15px 15px;
 }
 
+#heroPic {
+    width: 300px;
+}
+
 #addToTeam {
     position: absolute;
     width: 200px;
@@ -36,20 +40,18 @@ img {
 
 #description{
     font-size: calc(16px + .5vw);
+    padding: 10px 40px 0px 40px;
+    margin-left: 10px;
 }
 
 h3 {
     text-align: center;
     font-size: calc(40px + .3vw);
-    background-color: rgb(198, 201, 21);
+    background-color: rgb(0, 0, 0);
+    color:rgb(190, 6, 190);
     border-radius: 8px;
     margin-top: 30px;
     padding: 0px 10px 0px 10px;
     border: 5px ridge rgb(123, 119, 152);
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
-}
-
-#description {
-    padding: 10px 40px 0px 40px;
-    margin-left: 10px;
 }
