@@ -12,7 +12,7 @@ img {
 
 #addToTeam {
     position: absolute;
-    width: 200px;
+    width: 150px;
     height: 30px;
     bottom: 25px;
     right: 25px;
@@ -41,7 +41,7 @@ img {
 h3 {
     text-align: center;
     font-size: calc(40px + .3vw);
-    background-color: rgb(101, 70, 19);
+    background-color: rgb(105, 55, 120);
     color: white;
     border-radius: 8px;
     margin-top: 30px;

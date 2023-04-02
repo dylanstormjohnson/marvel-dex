@@ -3,8 +3,9 @@ var picEl = $("#heroPic");
 var bio = $("#description");
 
 var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
-var charName = "groot"
+var charName = "Groot"
 var wikiPageName = "Groot"
+var imgName = "File:I_am_Groot_vol_1.jpeg"
 
 async function getCharData(charName) {
     var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
@@ -15,9 +16,7 @@ async function getCharData(charName) {
     //     return;
     // }
     var data = await rawData.json()
-    var picUrl = data.data.results[0].thumbnail.path+".jpg"
     var cDbName = data.data.results[0].name
-    picEl.attr("src", picUrl)
     charNamPage.text(cDbName)
     console.log(data)
 }
@@ -43,5 +42,22 @@ async function wikipedia (wikiPageName) {
     bio.text(bioText)
 }
 
+
+async function wikiPic (imgName) {
+    var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=imageinfo&titles=" + imgName + "&formatversion=2&iiprop=url"
+    var rawData = await fetch(queryURL)
+    /* If API call fails, */
+    // if (!rawData.ok) {
+    //     console.log("Whoops")
+    //     return;
+    // }
+    var data = await rawData.json()
+    console.log(data)
+    var imgURL = data.query.pages[0].imageinfo[0].url;
+    picEl.attr("src", imgURL)
+}
+
+
 wikipedia(wikiPageName);
 getCharData(charName);
+wikiPic(imgName)
