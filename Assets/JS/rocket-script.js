@@ -34,12 +34,10 @@ async function wikipedia (wikiPageName) {
     console.log(data)
     var bioText = data.query.pages[0].extract
     bioText = bioText.split(/(\.)/)
-    bioText.splice(10, 4)
+    bioText.splice(0, 2);
+    bioText[0] = bioText[0].replace("the character", "Rocket")
+    bioText.splice(8, 2)
     bioText.splice(14, 3)
-
-    // bioText[8] = bioText[8].replace(/:\s265\s/, "")
-    // bioText[10] = bioText[10].replace(/:\s277\s/, "")
-    // bioText[10] = bioText[10].replace(/:\s263,\s265\s/, "")
     bioText = bioText.join("");
     console.log(bioText)
     bio.text(bioText)

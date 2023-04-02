@@ -7,15 +7,15 @@ img {
 
 #img-div {
     position: relative;
-    padding: 40px 0px 0px 0px;
+    padding: 40px 15px 15px 15px;
 }
 
 #addToTeam {
     position: absolute;
     width: 200px;
     height: 30px;
-    bottom: 10px;
-    right: 15px;
+    bottom: 25px;
+    right: 25px;
 }
 
 #specialPlacesText {

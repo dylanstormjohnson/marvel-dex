@@ -41,7 +41,8 @@ img {
 h3 {
     text-align: center;
     font-size: calc(40px + .3vw);
-    background-color: rgb(198, 201, 21);
+    background-color: rgb(44, 16, 201);
+    color: red;
     border-radius: 8px;
     margin-top: 30px;
     padding: 0px 10px 0px 10px;

@@ -5,6 +5,10 @@ img {
     box-shadow: 0px 0px 15px black;
 }
 
+#heroPic {
+    width: 350px;
+}
+
 #img-div {
     position: relative;
     padding: 40px 15px 15px 15px;
@@ -41,7 +45,8 @@ img {
 h3 {
     text-align: center;
     font-size: calc(40px + .3vw);
-    background-color: rgb(198, 201, 21);
+    background-color: rgb(110, 12, 135);
+    color: red;
     border-radius: 8px;
     margin-top: 30px;
     padding: 0px 10px 0px 10px;
