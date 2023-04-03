@@ -79,3 +79,7 @@ img {
     text-decoration: none;
     color: black;
   }
+
+  main #searchBar {
+    padding-top: 5%;
+  }

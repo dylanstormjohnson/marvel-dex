@@ -1,3 +1,7 @@
+main{
+    padding-top:20px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -10,12 +14,31 @@ img {
     padding: 40px 15px 15px 15px;
 }
 
+#heroPic{
+    width: 400px;
+}
+
 #addToTeam {
     position: absolute;
-    width: 150px;
-    height: 30px;
+    width: 180px;
+    height: 40px;
     bottom: 25px;
     right: 25px;
+    background-color: rgb(105, 55, 120);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    border: 5px groove black;
+    height: auto;
+
+}
+
+#addToTeam:hover {
+    opacity: 0.8;
+}
+
+#addToTeam:active {
+    background-color: aliceblue;
 }
 
 #specialPlacesText {
@@ -36,13 +59,22 @@ img {
 
 #description{
     font-size: calc(16px + .5vw);
+    padding: 10px 40px 10px 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 8px rgb(110, 109, 109);
+    color: black;
+    background-color: rgb(116, 144, 86);
+    border: groove 10px rgb(62, 29, 68); 
+    
 }
 
 h3 {
     text-align: center;
     font-size: calc(40px + .3vw);
+    margin-bottom: 20px;
     background-color: rgb(105, 55, 120);
-    color: white;
+    color: black;
     border-radius: 8px;
     margin-top: 30px;
     padding: 0px 10px 0px 10px;
@@ -50,7 +82,19 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
-#description {
-    padding: 10px 40px 0px 40px;
-    margin-left: 10px;
+#specialPlacesText {
+    box-shadow: 5px 5px 5px rgb(110, 109, 109);
+    background-color: rgb(116, 144, 86);
+    border: groove 10px rgb(62, 29, 68); 
+    height:auto;
+    
+}
+
+#specialPlacesText p {
+    font-size: calc(16px + .5vw);
+}
+
+#specialPlacesText h4 {
+    padding-top: 10px;
+    font-size: 50px;;
 }
