@@ -104,21 +104,19 @@ nav ul a:hover{
 
 }
 
-/* #dropdownNavBtn:hover{
+#dropdownNavBtn:hover{
   overflow:visible;
-} */
-
-/* #dropdown-menu a:hover{
-  background-color: white;
-} */
+}
 
 #dropdown-item {
   background-color: white;
 }
 
-#imgNavBar {
-  width: 20%;
-  height: 20%;
-  border-radius: 5px;
+#marvelLink {
+  align-items: left;
 }
 
+#dropdownNavBtn:hover{
+  color:rgb(149, 110, 110);
+
+}
