@@ -15,11 +15,26 @@ img {
 }
 
 #addToTeam {
+    font-size: 20px;
     position: absolute;
     width: 200px;
-    height: 30px;
+    height: 40px;
     bottom: 25px;
     right: 25px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(190, 6, 190);
+    border: groove 5px rgb(152, 19, 172); 
+    font-weight: bold;
+    height: auto;
+}
+
+#addToTeam:hover {
+    background-color: rgb(47, 47, 47);
+}
+
+#addToTeam:active {
+    background-color: rgb(255, 255, 255);
 }
 
 #specialPlacesText {
@@ -38,10 +53,19 @@ img {
     width: 200px; 
 }
 
+#char-bio {
+    padding-right: 15px;
+}
+
 #description{
-    font-size: calc(16px + .5vw);
-    padding: 10px 40px 0px 40px;
+    font-size: calc(18px + .5vw);
+    padding: 10px 40px 10px 40px;
     margin-left: 10px;
+    box-shadow: 5px 5px 8px rgb(110, 109, 109);
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: groove 5px rgb(152, 19, 172); 
+
 }
 
 h3 {
@@ -54,4 +78,23 @@ h3 {
     padding: 0px 10px 0px 10px;
     border: 5px ridge rgb(123, 119, 152);
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
+    margin-bottom: 20px;
+}
+
+#specialPlacesText{
+    box-shadow: 5px 5px 8px rgb(110, 109, 109);
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: groove 5px rgb(152, 19, 172); 
+    height: auto;
+}
+
+#specialPlacesText h4 {
+    padding-top: 10px;
+}
+
+#specialPlacesText p {
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+    
 }

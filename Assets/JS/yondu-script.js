@@ -59,7 +59,6 @@ async function wikiPic (wikiPageName) {
     console.log(imgData)
     var imgURL = imgData.query.pages[0].imageinfo[0].url;
     picEl.attr("src", imgURL)
-
 }
 
 wikipedia(wikiPageName);

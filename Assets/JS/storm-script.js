@@ -33,7 +33,7 @@ async function wikipedia (wikiPageName) {
     var data = await rawData.json()
     console.log(data)
     var bioText = data.query.pages[0].extract
-    bioText = bioText.split(/(\.)/)
+    bioText = bioText.split(/(\.)/) 
     bioText.splice(0, 2)
     bioText[0] = bioText[0].replace("the character", "Storm")
     bioText = bioText.join("");
