@@ -1,7 +1,7 @@
 *{
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
 }
 
@@ -48,8 +48,12 @@ img {
 
 
 #imgXForce, #imgXMen, #imgAvengers, #imgGuardians {
-  width: 40%;
-  height: 50%;
+  /* width: 40%;
+  height: 50%; */
+}
+
+#imgAvengers, #imgGuardians {
+
 }
 
 /* @media screen and (max-width: 586px){ 
@@ -82,13 +86,15 @@ img {
   padding-top: 5%;
 } */
 
-#searchDropdown{
+/* #searchDropdown{
   position: relative;
   display: inline-block;
   overflow:hidden;
-}
+  overflow:visible !important;
 
-#searchDropdownBtn{
+} */
+
+/* #searchDropdownBtn{
   background-color: #04AA6D;
   color: white;
   padding: 16px;
@@ -117,3 +123,7 @@ img {
   text-decoration: none;
   display: block !important;
 }
+
+#searchDropdown-content:hover{
+  display: block !important;
+}  */
