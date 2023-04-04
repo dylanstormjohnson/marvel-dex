@@ -2,8 +2,6 @@
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
   overflow-x: hidden;
-
-
 }
 
 main{
@@ -12,7 +10,6 @@ main{
   box-sizing:border-box;
 }
 
-
 main, footer {
   background: rgb(244,232,234);
   background: linear-gradient(0deg, rgba(244,232,234,1) 0%, rgba(247,217,210,1) 35%, rgba(187,75,91,0.38139005602240894) 100%);
@@ -20,7 +17,7 @@ main, footer {
 
 body{ 
   margin:0 auto;
-  padding:0;
+  /* padding-top: 50px !important; */
 }
 
 nav ul {
@@ -46,7 +43,7 @@ nav ul a:hover{
   background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
   color: white;
   overflow: hidden;
-
+  font-size: 2rem;
   /* width: 100%;
   left: 0px;
   right: 0px; */
@@ -54,13 +51,15 @@ nav ul a:hover{
 
 #navbar {
   overflow: hidden;
-    /* container-fluid */
+  /* container-fluid */
+  height: auto;
 }
 
 
 #marvelTeamsNavBar{
   float:left;
   overflow:hidden;
+  /* height: 200px; */
 }
 
 
@@ -77,7 +76,7 @@ nav ul a:hover{
 
 #dropdown-menu{
   display: none;
-  position:absolute;
+  position:absolute !important;
   background-color: inherit;  
   /* check color */
   max-width: 160px;
@@ -92,7 +91,7 @@ nav ul a:hover{
   float:none;
   color:black;
   text-decoration: none;
-  display: block;
+  display: block !important;
   text-align: left;
   padding: 12px 16px;
 
@@ -104,21 +103,34 @@ nav ul a:hover{
 
 }
 
-/* #dropdownNavBtn:hover{
+#dropdownNavBtn:hover{
   overflow:visible;
-} */
-
-/* #dropdown-menu a:hover{
-  background-color: white;
-} */
+}
 
 #dropdown-item {
   background-color: white;
 }
 
-#imgNavBar {
-  width: 20%;
-  height: 20%;
-  border-radius: 5px;
+#marvelLink {
+  align-items: left;
 }
 
+#dropdownNavBtn:hover{
+  color:rgb(149, 110, 110);
+
+}
+
+
+/* #xForce, #avengers  {
+padding-left:20%;
+
+}
+
+#xMen, #guardians{
+padding-right: 20%;
+
+} */
+
+#marvelTeams img{
+  width: 250px;
+}
