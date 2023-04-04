@@ -48,8 +48,6 @@ for (var i = 0; i < imgDataObjArr.length; i++) {
 }
 }
 
-
-
 // Gets list of comics to review for pic; not used in code function 
 // async function getSeriesData(charId, img) {
 //     var queryURL = "https://gateway.marvel.com:443/v1/public/characters/" + charId + "/comics?apikey=" + apiKey;
