@@ -10,15 +10,14 @@ var imgName = "File:Magneto_(Marvel_Comics_character).jpg"
 async function getCharData(charName) {
     var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
     var rawData = await fetch(queryURL)
-    /* If API call fails, */
-    // if (!rawData.ok) {
-    //     console.log("Whoops")
-    //     return;
-    // }
+    if (rawData !== 200) {
+        $('#errorModal').modal('show')
+        return;
+        }
     var data = await rawData.json()
     var cDbName = data.data.results[0].name
     charNamPage.text(cDbName)
-    console.log(data)
+
 }
 
 async function wikipedia (wikiPageName) {
@@ -30,14 +29,12 @@ async function wikipedia (wikiPageName) {
     //     return;
     // }
     var data = await rawData.json()
-    console.log(data)
     var bioText = data.query.pages[0].extract
     bioText = bioText.split(/(\.)/)
     bioText.splice(0, 2)
     bioText[0] = bioText[0].replace("Created by writer Stan Lee and artist/co-writer Jack Kirby, the character ", "Magneto (birth name: Max Eisenhardt; alias: Erik Lehnsherr and Magnus) ")
     bioText.splice(16, 3)
     bioText = bioText.join("");
-    console.log(bioText)
     bio.text(bioText)
 }
 
@@ -50,7 +47,6 @@ async function wikiPic (imgName) {
     //     return;
     // }
     var data = await rawData.json()
-    console.log(data)
     var imgURL = data.query.pages[0].imageinfo[0].url;
     picEl.attr("src", imgURL)
 }
