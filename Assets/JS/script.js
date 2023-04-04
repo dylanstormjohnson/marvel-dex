@@ -8,6 +8,7 @@
 //   window.location.replace(`./${character[i]}.html`)
 // }
 // }
+
 var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
 var copyrights = $("#copyrights");
 
