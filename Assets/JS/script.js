@@ -21,4 +21,5 @@ async function getCopyrights(copyrights) {
   console.log(copyrightText)
 }
 
+
 getCopyrights(copyrights)
