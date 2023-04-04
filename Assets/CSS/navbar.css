@@ -2,16 +2,13 @@
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
   overflow-x: hidden;
-
 }
 
 main{
   min-height:calc(100vh - 100px);
   height:auto;
   box-sizing:border-box;
-
 }
-
 
 main, footer {
   background: rgb(244,232,234);
@@ -54,8 +51,8 @@ nav ul a:hover{
 
 #navbar {
   overflow: hidden;
-    /* container-fluid */
-    height: auto;
+  /* container-fluid */
+  height: auto;
 }
 
 
