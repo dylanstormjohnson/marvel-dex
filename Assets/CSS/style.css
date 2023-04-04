@@ -1,7 +1,6 @@
 *{
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
-  /* overflow-x: hidden; */
 
 }
 
@@ -16,7 +15,7 @@ body{
 }
 
 
-img {
+/* img {
     max-width: 100%;
     background-color: purple;
 }
@@ -24,28 +23,7 @@ img {
 #img-div {
     position: relative;
     padding: 0px;
-}
-
-#addToTeam {
-    position: absolute;
-    width: 200px;
-    height: 30px;
-    bottom: 5px;
-    right: 10px;
-}
-
-#specialPlacesText {
-    text-align: center;
-    height: 100px; 
-    width: 70%;
-    border: 5px groove black;
-}
-
-#GoogleMapWidget {
-    height: 200px; 
-    width: 200px; 
-}
-
+} */
 
 #imgXForce, #imgXMen, #imgAvengers, #imgGuardians {
   /* width: 40%;
@@ -56,18 +34,27 @@ img {
 
 }
 
-/* @media screen and (max-width: 586px){ 
-  #site-search {
-    font-size: 10px;
-    }
-  #searchBtn {
-    font-size:14px;
-  }
-  #searchSite {
-    font-size: 20px;
+@media screen and (max-width: 586px){ 
+  #custom-navBar li{
+    font-size: 1.5rem;
   }
 
-} */
+  #custom-navBar ul{
+    padding-left:5px;
+  }
+
+}
+
+@media screen and (max-width: 457px){ 
+  #custom-navBar li{
+    font-size: 1rem;
+  }
+
+
+}
+
+
+
 
 #marvelLink {
   position: absolute;
@@ -77,53 +64,40 @@ img {
 }
 
 
-#marvelTeams a {
-  text-decoration: none;
-  color: black;
-}
 
-/* main #searchBar {
-  padding-top: 5%;
-} */
-
-/* #searchDropdown{
-  position: relative;
-  display: inline-block;
-  overflow:hidden;
-  overflow:visible !important;
-
-} */
-
-/* #searchDropdownBtn{
-  background-color: #04AA6D;
+#dropdownSearch {
+  background: rgb(8,0,1);
+  background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
   color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  outline:none;
-  font-family: inherit;  
-  font-size: 50px;
-
+  padding:0;
+  font-size:1.5rem;
+  padding-left: 10px;
 
 }
 
-#searchDropdown-content {
-  display: none;
-  position: absolute !important;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+#dropdownSearch:hover{
+  opacity: 0.5;
 }
 
-#searchDropdown-content a {
-  float:none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block !important;
+/* #dropdownSearch:active{
+  background-color: antiquewhite;
+} */
+
+#dropdownMenuBtn{
+  background: rgb(8,0,1);
+  background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
+  color: white;
+  font-size: 2.5rem;
+
 }
 
-#searchDropdown-content:hover{
-  display: block !important;
-}  */
+#dropdown {
+  padding-left: 20px;
+  padding-top: 20px;
+
+}
+
+/* .dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+} */
