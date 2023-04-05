@@ -1,7 +1,6 @@
 *{
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
-  /* overflow-x: hidden; */
 }
 
 main{
@@ -22,7 +21,7 @@ body{
 nav ul {
   list-style-type: none;
   display:flex;
-  align-items: center;
+  text-align: center;
 }
 
 nav ul a{
@@ -41,7 +40,7 @@ nav ul a:hover{
   background: rgb(8,0,1);
   background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
   color: white;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 2rem;
   /* width: 100%;
   left: 0px;
@@ -117,6 +116,38 @@ nav ul a:hover{
 #dropdownNavBtn:hover{
   color:rgb(149, 110, 110);
 
+}
+
+@media screen and (max-width: 683px){ 
+  #custom-navBar li{
+    font-size: 1.5rem;
+  }
+
+  #custom-navBar ul{
+    padding-left:5px;
+  }
+}
+
+@media screen and (max-width: 535px){ 
+  #custom-navBar li{
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 413px){ 
+  #custom-navBar li{
+    font-size: 0.8rem;
+    padding-left: 2px !important;
+
+  }
+}
+
+@media screen and (max-width: 366px){ 
+  #custom-navBar li{
+    padding-left: 2px;
+
+  }
 }
 
 
