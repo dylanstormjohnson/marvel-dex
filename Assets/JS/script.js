@@ -12,6 +12,7 @@
 var copyrights = $("#copyrights");
 
 
+
 function getCopyrights(copyrights) {
     console.log(copyrights)
     var copyrightText = ` 

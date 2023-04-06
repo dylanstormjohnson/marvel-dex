@@ -7,6 +7,7 @@
 main {
   background: rgb(244,232,234);
   background: linear-gradient(0deg, rgba(244,232,234,1) 0%, rgba(247,217,210,1) 35%, rgba(187,75,91,0.38139005602240894) 100%);
+  padding-bottom: 30px;
 }
 
 body{ 
@@ -15,20 +16,12 @@ body{
 }
 
 
-/* img {
-    max-width: 100%;
-    background-color: purple;
-}
-
-#img-div {
-    position: relative;
-    padding: 0px;
-} */
-
-
-
 #imgXForce, #imgXMen, #imgAvengers, #imgGuardians {
   background-color: brown;
+  max-width: 100%;
+  justify-content: center;
+
+
 }
 
 #xForce a, #xMen a, #avengers a, #guardians a {
@@ -38,13 +31,16 @@ body{
   color:black;
 }
 
-#imgAvengers, #imgGuardians {
-
+#xForce p, #xMen p, #avengers p, #guardians p {
+  font-size: 40px !important;
+  font-weight: bold !important;
 }
 
-#imagesRow{
+.imagesRow{
   padding-top: 50px;
+  justify-content: center !important;
 }
+
 
 #dropdownSearch {
   background: rgb(8,0,1);
@@ -63,7 +59,7 @@ body{
 }
 
 #dropdownSearch:active{
-  background-color: antiquewhite;
+  color:rgb(198, 130, 41);
 }
 
 #dropdownMenuBtn{
@@ -92,6 +88,18 @@ body{
 
 }
 
+#copyrights a, #copyrights p {
+  color: white; 
+  font-size: calc(5px + .5vw);
+
+}
+
+footer{
+  background: rgb(8,0,1);
+  background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
+  color: white;
+  height: 50px;
+}
 
 @media screen and (max-width: 683px){ 
   #dropdownMenuBtn{
@@ -108,6 +116,10 @@ body{
   #dropdownMenuBtn{
     font-size: 1rem;
   }
+  #dropdownSearch {
+    font-size: 1rem;
+
+  }
 }
 
 
@@ -115,5 +127,35 @@ body{
   #dropdownMenuBtn{
     font-size: 0.8rem;
   }
+  #dropdownSearch {
+    font-size: 0.8rem;
+  }
+  #xForce p, #xMen p, #avengers p, #guardians p {
+    font-size: 30px !important;
+  }
 }
+
+@media screen and (max-width: 309px){ 
+  #dropdownMenuBtn{
+  font-size:0.6rem;
+  }
+
+  #dropdownSearch {
+    font-size: 0.6rem;
+
+  }
+}
+
+@media screen and (max-width: 776px){ 
+  /* #xMen p, #guardians p {
+    padding-top: 40px;
+  } */
+}
+
+/* @media screen and (min-width: 989px){ 
+  .imagesRow img{
+
+  }
+
+} */
 
