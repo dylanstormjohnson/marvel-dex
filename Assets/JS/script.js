@@ -25,3 +25,7 @@ async function getCopyrights(copyrights) {
 
 
 getCopyrights(copyrights);
+
+
+//this is for my-team page add event listener
+//var addCharacter = document.querySelector('#addToTeam')
