@@ -15,15 +15,15 @@ body{
 }
 
 
-/* img {
+/* /* img {
     max-width: 100%;
     background-color: purple;
-}
+} */
 
-#img-div {
+/* #img-div {
     position: relative;
     padding: 0px;
-} */
+}  */
 
 
 
@@ -38,13 +38,26 @@ body{
   color:black;
 }
 
+#xForce p, #xMen p, #avengers p, #guardians p {
+  font-size: 50px !important;
+  /* font-weight: bolder !important; */
+}
+
 #imgAvengers, #imgGuardians {
 
 }
 
-#imagesRow{
+.imagesRow{
   padding-top: 50px;
 }
+
+.imagesRow img{
+  max-width: 100%;
+}
+/* #imgXForce {
+  padding-right: 50px;
+} */
+
 
 #dropdownSearch {
   background: rgb(8,0,1);
@@ -111,3 +124,15 @@ body{
   }
 }
 
+@media screen and (max-width: 776px){ 
+  #xMen p, #guardians p {
+    padding-top: 50px;
+  }
+}
+
+/* @media screen and (min-width: 989px){ 
+  .imagesRow img{
+
+  }
+
+} */
