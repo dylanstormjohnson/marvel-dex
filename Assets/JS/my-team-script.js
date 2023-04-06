@@ -7,6 +7,7 @@ var characterContainerDivEl = $("#character-container");
 function init() {
   //myTeam = JSON.parse(localStorage.getItem("myTeamCharacters")) 
 
+  // for the length of my team, add a remove button under the images to then select a new character
   for (var i = 0; i < myTeam.length; i++) {
     var charName = myTeam[i]
     var html = `
@@ -20,6 +21,7 @@ function init() {
 
   }
 
+  // for the remainder of empty spaces in my team, add a + sign to add more characters
   for (var k = 0; k < 4 - myTeam.length; k++) {
     var charName = myTeam[i]
     var html = `
@@ -36,12 +38,13 @@ function init() {
 
 init();
 
-
+// when the remove button is clicked, empty the space and create + sign to add another hero up to a max of 4
 characterContainerDivEl.on('click', '.remove-hero', function(event) {
   console.log('remove hero')
   $(event.target).parent('.team').html('')
 });
 
+// add button leads back to home page to select new heros
 characterContainerDivEl.on('click', '.add-hero', function(event) {
   console.log('add hero')
   window.location.href="../../index.html"
