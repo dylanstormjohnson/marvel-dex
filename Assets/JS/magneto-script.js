@@ -15,6 +15,7 @@ async function getCharData(charName) {
         return;
         }
     var data = await rawData.json()
+    console.log(data)
     var cDbName = data.data.results[0].name
     charNamPage.text(cDbName)
 

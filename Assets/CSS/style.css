@@ -86,6 +86,12 @@ body{
   padding-bottom: 0;
 }
 
+#copyrights a, #copyrights p {
+  color: white; 
+  font-size: calc(5px + .5vw);
+
+}
+
 
 @media screen and (max-width: 683px){ 
   #dropdownMenuBtn{

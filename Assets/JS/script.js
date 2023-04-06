@@ -9,16 +9,19 @@
 // }
 // }
 
-var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
 var copyrights = $("#copyrights");
 
-// async function getCopyrights(copyrights) {
-//     var queryURL = "http://gateway.marvel.com/v1/public/characters?" + "&apikey=" + apiKey;
-//     var rawData = await fetch(queryURL)
-//     var data = await rawData.json()
-//     var copyrightText = data.attributionText
-//     copyrights.text(copyrightText)
-//     console.log(copyrightText)
-// }
 
-// getCopyrights(copyrights);
+function getCopyrights(copyrights) {
+    console.log(copyrights)
+    var copyrightText = ` 
+        <a href='http://marvel.com'>Data provided by Marvel. © 2023 MARVEL</a> 
+        <p>Bio adapted from Wikipedia</p>
+        <p>Neither Marvel nor Wikipedia endorsed this project nor have collaborated to create this page. It is a student project. All characters, data, and images are copyright their respective owners</p> 
+    `
+    console.log(copyrightText)
+    copyrights.append(copyrightText)
+}
+
+getCopyrights(copyrights);
+
