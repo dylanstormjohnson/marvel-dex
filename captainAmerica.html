@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Marvel:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Big+Shoulders+Stencil+Text:wght@700&family=Rowdies:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Captain America</title>
 </head>
@@ -55,13 +56,16 @@
             <div class="align-self-center col-lg-4 col-md-9 col-sm-9 col-9">
                 <div id="img-div">
                     <img id="heroPic" src="">
-                    <button id="addToTeam">Add To Team</button>
+                    <button class="btn btn-info btn-outline-danger" id="addToTeam">Add To Team</button>
                 </div>
             </div>
             
             <div id="char-bio" class="d-flex flex-column col-lg-7">
                 <h3 class="align-self-center" id="charName"></h3>
-                <p id="description"></p>
+                <div class="bg-primary bg-gradient text-white rounded">
+                  <img class="americanFlag" href="./Assets/Images/American_Flag.jpg">
+                  <p id="description"></p>
+                </div>
             </div>
         </section>
         <section class="d-flex flex-column row g-0 align-items-center" id="GoogleMaps">
