@@ -10,7 +10,7 @@ function init() {
   for (var i = 0; i < myTeam.length; i++) {
     var charName = myTeam[i]
     var html = `
-    <div class="team col-3 vh-100" id="playerOne">
+    <div class="team col-3" id="playerOne">
       <img src="./Assets/Images/Screenshot 2023-03-27 at 8.36.28 PM.png" class="img-fluid" alt="Marvel Character">
       <button class='remove-hero' >Remove Hero</button>
     </div>
@@ -23,8 +23,8 @@ function init() {
   for (var k = 0; k < 4 - myTeam.length; k++) {
     var charName = myTeam[i]
     var html = `
-    <div class="add-hero col-3 vh-100">
-    <i class="fa-solid fa-plus-large"></i>
+    <div class="add-hero col-3 d-flex justify-content-center align-items-center">
+    <i class="fa-solid fa-plus fa-2xl" style="font-size: 3rem" ></i>
     </div>
     `
 
@@ -39,10 +39,12 @@ init();
 
 characterContainerDivEl.on('click', '.remove-hero', function(event) {
   console.log('remove hero')
+  $(event.target).parent('.team').html('')
 });
 
 characterContainerDivEl.on('click', '.add-hero', function(event) {
   console.log('add hero')
+  window.location.href="../../index.html"
 });
 
 
