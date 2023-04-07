@@ -61,7 +61,7 @@ characterContainerDivEl.on('click', '.remove-hero', function(event) {
 // add button leads back to home page to select new heros
 characterContainerDivEl.on('click', '.add-hero', function(event) {
   console.log('add hero')
-  window.location.href="../../index.html"
+  window.location.href= "index.html"
 });
 
 function loadMyTeam() {
