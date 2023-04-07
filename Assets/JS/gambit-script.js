@@ -18,7 +18,6 @@ async function getCharData(charName) {
     var data = await rawData.json()
     var cDbName = data.data.results[0].name
     charNamPage.text(cDbName)
-    console.log(data)
 }
 
 async function wikipedia (wikiPageName) {
@@ -30,11 +29,9 @@ async function wikipedia (wikiPageName) {
     //     return;
     // }
     var data = await rawData.json()
-    console.log(data)
     var bioText = data.query.pages[0].extract
     bioText = bioText.split(/(\.)/)
     bioText = bioText.join("");
-    console.log(bioText)
     bio.text(bioText)
 }
 
@@ -47,7 +44,6 @@ async function wikiPic (imgName) {
     //     return;
     // }
     var data = await rawData.json()
-    console.log(data)
     var imgURL = data.query.pages[0].imageinfo[0].url;
     picEl.attr("src", imgURL)
 }
