@@ -6,14 +6,16 @@ img {
 }
 
 #img-div {
+    font-family: 'New Rocker', cursive;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
 
 #addToTeam {
+    text-decoration: underline;
     position: absolute;
-    width: 200px;
-    height: 30px;
+    width: 135px;
+    height: 37px;
     bottom: 25px;
     right: 25px;
 }
@@ -36,9 +38,11 @@ img {
 
 #description{
     font-size: calc(16px + .5vw);
+    font-family: 'New Rocker', cursive;
 }
 
 h3 {
+    font-family: 'New Rocker', cursive;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(103, 41, 196);

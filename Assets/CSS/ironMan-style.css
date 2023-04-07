@@ -6,14 +6,15 @@ img {
 }
 
 #img-div {
+    font-family: 'Big Shoulders Stencil Text', cursive;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
 
 #addToTeam {
     position: absolute;
-    width: 200px;
-    height: 30px;
+    width: 115px;
+    height: 38px;
     bottom: 25px;
     right: 25px;
 }
@@ -35,10 +36,12 @@ img {
 }
 
 #description{
+    font-family: 'Big Shoulders Stencil Text', cursive;
     font-size: calc(16px + .5vw);
 }
 
 h3 {
+    font-family: 'Big Shoulders Stencil Text', cursive;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(221, 8, 8);

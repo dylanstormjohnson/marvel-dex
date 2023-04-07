@@ -6,14 +6,16 @@ img {
 }
 
 #img-div {
+    font-family: 'Roboto', sans-serif;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
 
 #addToTeam {
+    text-decoration: underline;
     position: absolute;
-    width: 200px;
-    height: 30px;
+    width: 140px;
+    height: 37px;
     bottom: 25px;
     right: 25px;
 }
@@ -35,10 +37,12 @@ img {
 }
 
 #description{
+    font-family: 'Roboto', sans-serif;
     font-size: calc(16px + .5vw);
 }
 
 h3 {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(55, 129, 58);
