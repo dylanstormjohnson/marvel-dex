@@ -21,14 +21,28 @@ var doctorStrange = $("#doctorStrange");
 function marvelTeam() {
   var charArr = [];
   var idArr = [];
-  // var teams = ["X-Men", "X-Force", "Guardians of the Galaxy", "Avengers"];
+  var teams = ["X-Men", "X-Force", "Guardians of the Galaxy", "Avengers"];
 
 
   // for (var j=0; j<teams.length; j++){
-  //   var teamNameH1El = $("<h1>")
-  //   teamNameH1El.text(teams[i])
-  //   teamName.append(teamNameH1El)
+  //   teamName.text(teams[j])
 
+    // var teamNameH1El = $("<h1>")
+    // teamNameH1El.text(teams[j])
+    // teamName.append(teamNameH1El)
+    // teamNameH1El.addClass("pt-4")
+
+    // var descriptionPEl = $("<p>");
+    // descriptionPEl.text("dynamically add description")
+    // teamName.append(descriptionPEl)
+
+    // var divContainer = $("<div>");
+    // divContainer.addClass("container");
+    // teamName.append(divContainer);
+
+    // var divRow = $("div");
+    // divRow.addClass("row mt-4")
+    // teamName.append(divRow)
 
   // check which team page we are in to choose the right characters array
     console.log(teamName.text())
@@ -58,7 +72,6 @@ function marvelTeam() {
       charImg.addClass("img-fluid");
       idArr[i].append(charImg);
 
-  console.log("href", "./" + idArr[i] + ".html")
       var linkToPage = $("<a>");
       linkToPage.text("Link to Bio");
       linkToPage.attr("href", "./" + idArr[i].text() + ".html")
