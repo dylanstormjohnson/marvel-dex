@@ -86,12 +86,14 @@ main {
   font-size: calc(10px + .5vw);
   margin:0;
   padding-right: 30px;
+  line-height: auto;
 }
 
 footer{
   background: rgb(8,0,1);
   background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
   color: white;
+  height: auto;
 }
 
 @media screen and (max-width: 683px){ 

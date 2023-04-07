@@ -32,10 +32,20 @@ function addHero() {
     myTeamArr = loadMyTeam()
     var thisChar = $("title").text()
 // index of is -1 if char is not in array
-    if (myTeamArr.teamComp.length < 4 && myTeamArr.teamComp.indexOf(thisChar) === -1){
-        myTeamArr.teamComp.push(thisChar);
-        saveMyTeam(myTeamArr)
+    if (myTeamArr.teamComp.indexOf(thisChar) !== -1) {
+        $('#modal-main-txt').text("This character is already on your team!")
+        $('#errorModal').modal('show');
     }
+    else if (myTeamArr.teamComp.length < 4){
+        myTeamArr.teamComp.push(thisChar);
+        saveMyTeam(myTeamArr);
+        window.location.href= "my-team.html"
+    }
+    else {
+        $('#modal-main-txt').text("You already have a full team! Remove a team member first!")
+        $('#errorModal').modal('show');
+    }
+   
 }
 
 function getCopyrights(copyrights) {
@@ -46,7 +56,6 @@ function getCopyrights(copyrights) {
         <p>Bio adapted from Wikipedia</p>
         </div> 
         <p>Neither Marvel nor Wikipedia endorsed this project nor have collaborated to create this page. It is a student project. All characters, data, and images are copyright their respective owners</p>
-        
     `   
     console.log(copyrightText)
     copyrights.append(copyrightText)
