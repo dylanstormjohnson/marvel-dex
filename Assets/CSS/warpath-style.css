@@ -25,15 +25,6 @@ img {
     border: 5px groove black;
 }
 
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#GoogleMapWidget {
-    height: 200px; 
-    width: 200px; 
-}
-
 #description{
     font-size: calc(16px + .5vw);
 }
@@ -54,3 +45,4 @@ h3 {
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
 }
+

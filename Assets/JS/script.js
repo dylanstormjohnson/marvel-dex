@@ -16,10 +16,13 @@ var copyrights = $("#copyrights");
 function getCopyrights(copyrights) {
     console.log(copyrights)
     var copyrightText = ` 
+        <div class="d-flex justify-content-center">
         <a href='http://marvel.com'>Data provided by Marvel. © 2023 MARVEL</a> 
         <p>Bio adapted from Wikipedia</p>
-        <p>Neither Marvel nor Wikipedia endorsed this project nor have collaborated to create this page. It is a student project. All characters, data, and images are copyright their respective owners</p> 
-    `
+        </div> 
+        <p>Neither Marvel nor Wikipedia endorsed this project nor have collaborated to create this page. It is a student project. All characters, data, and images are copyright their respective owners</p>
+        
+    `   
     console.log(copyrightText)
     copyrights.append(copyrightText)
 }
