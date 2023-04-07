@@ -8,16 +8,21 @@ var wikiPageName = "Magneto_(Marvel_Comics)"
 var imgName = "File:Magneto_(Marvel_Comics_character).jpg"
 
 async function getCharData(charName) {
-    var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
-    var rawData = await fetch(queryURL)
-    if (rawData.status !== 200) {
+    try {
+        var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
+        var rawData = await fetch(queryURL)
+        if (rawData.status !== 200) {
+            $('#errorModal').modal('show')
+            return;
+            }
+        var data = await rawData.json()
+        console.log(data)
+        var cDbName = data.data.results[0].name
+        charNamPage.text(cDbName)
+    } catch(err) {
         $('#errorModal').modal('show')
-        return;
-        }
-    var data = await rawData.json()
-    console.log(data)
-    var cDbName = data.data.results[0].name
-    charNamPage.text(cDbName)
+        console.log(err);
+    }
 
 }
 
