@@ -1,32 +1,27 @@
 *{
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
-  overflow-x: hidden;
-
-
 }
 
 main{
   min-height:calc(100vh - 100px);
   height:auto;
   box-sizing:border-box;
-}
-
-
-main, footer {
   background: rgb(244,232,234);
   background: linear-gradient(0deg, rgba(244,232,234,1) 0%, rgba(247,217,210,1) 35%, rgba(187,75,91,0.38139005602240894) 100%);
+
 }
+
 
 body{ 
   margin:0 auto;
-  padding:0;
+  /* padding-top: 50px !important; */
 }
 
 nav ul {
   list-style-type: none;
   display:flex;
-  align-items: center;
+  text-align: center;
 }
 
 nav ul a{
@@ -41,12 +36,16 @@ nav ul a:hover{
   color:rgb(149, 110, 110);
 }
 
+nav ul a:active{
+  color:rgb(198, 130, 41);
+}
+
 #custom-navBar {
   background: rgb(8,0,1);
   background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
   color: white;
-  overflow: hidden;
-
+  /* overflow: hidden; */
+  font-size: 2rem;
   /* width: 100%;
   left: 0px;
   right: 0px; */
@@ -54,13 +53,15 @@ nav ul a:hover{
 
 #navbar {
   overflow: hidden;
-    /* container-fluid */
+  /* container-fluid */
+  height: auto;
 }
 
 
 #marvelTeamsNavBar{
   float:left;
   overflow:hidden;
+  /* height: 200px; */
 }
 
 
@@ -77,26 +78,34 @@ nav ul a:hover{
 
 #dropdown-menu{
   display: none;
-  position:absolute;
+  position:absolute !important;
   background-color: inherit;  
   /* check color */
   max-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  background-color:rgb(246, 204, 204);
-
 
 }
 
 #dropdown-menu a{
+  align-items: center;
   float:none;
   color:black;
   text-decoration: none;
-  display: block;
+  display: block !important;
   text-align: left;
   padding: 12px 16px;
+  background: rgb(159,2,29);
+  background: linear-gradient(0deg, rgba(159,2,29,1) 0%, rgba(163,19,40,0.756827731092437) 100%);
 
+}
 
+#dropdown-menu a:hover{
+  background-color: antiquewhite;
+}
+
+#dropdown-menu a:active{
+  background-color: rgb(155, 147, 137);
 }
 
 #marvelTeamsNavBar:hover #dropdown-menu {
@@ -106,6 +115,8 @@ nav ul a:hover{
 
 #dropdownNavBtn:hover{
   overflow:visible;
+  color:rgb(149, 110, 110);
+
 }
 
 #dropdown-item {
@@ -116,7 +127,55 @@ nav ul a:hover{
   align-items: left;
 }
 
-#dropdownNavBtn:hover{
-  color:rgb(149, 110, 110);
+@media screen and (max-width: 683px){ 
+  #custom-navBar li{
+    font-size: 1.5rem;
+  }
+
+  #custom-navBar ul{
+    padding-left:5px;
+  }
+}
+
+@media screen and (max-width: 535px){ 
+  #custom-navBar li{
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 413px){ 
+  #custom-navBar li{
+    padding-left: 2px !important;
+
+  }
+}
+
+@media screen and (max-width: 366px){ 
+  #custom-navBar li{
+    padding-left: 2px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 309px){ 
+  #custom-navBar li{
+  font-size:0.7rem;
+  }
+}
+
+
+/* #xForce, #avengers  {
+padding-left:20%;
 
 }
+
+#xMen, #guardians{
+padding-right: 20%;
+
+} */
+
+#marvelTeams img{
+  width: 250px;
+}
+
