@@ -6,14 +6,16 @@ img {
 }
 
 #img-div {
+    font-family: 'Bangers', cursive;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
 
 #addToTeam {
+    text-decoration: underline;
     position: absolute;
-    width: 200px;
-    height: 30px;
+    width: 115px;
+    height: 37px;
     bottom: 25px;
     right: 25px;
 }
@@ -35,10 +37,13 @@ img {
 }
 
 #description{
+    position: relative;
+    font-family: 'Bangers', cursive;
     font-size: calc(16px + .5vw);
 }
 
 h3 {
+    font-family: 'Bangers', cursive;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(16, 18, 146);
@@ -54,3 +59,11 @@ h3 {
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
 }
+
+/* .americanFlag {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 50px;
+    right: 50px;
+} */

@@ -1,4 +1,4 @@
-// var characters = ["Deadpool", "Warpath", "Wolverine", "Domino", "Magneto", "Storm", "Gambit", "Night Crawler", "Iron Man", "Captain America", "Thor", "Dr. Strange", "Groot", "Rocket", "Yondu", "Howard the Duck"];
+//var characters = ["Deadpool", "Warpath", "Wolverine", "Domino", "Magneto", "Storm", "Gambit", "Night Crawler", "Iron Man", "Captain America", "Thor", "Dr. Strange", "Groot", "Rocket", "Yondu", "Howard the Duck"];
 
 // window.redirect
 
@@ -11,7 +11,32 @@
 
 var copyrights = $("#copyrights");
 
+var myTeamArr = {
+    teamName: "", 
+    teamComp: []
+}
+var addBtn = $('#addToTeam')
 
+addBtn.on('click', addHero)
+
+function loadMyTeam() {
+    var thisTeamArr = JSON.parse(localStorage.getItem("myTeamCharacters")) || myTeamArr
+    return thisTeamArr;
+}
+
+function saveMyTeam(myTeamArr) {
+    localStorage.setItem("myTeamCharacters", JSON.stringify(myTeamArr))
+}
+
+function addHero() {
+    myTeamArr = loadMyTeam()
+    var thisChar = $("title").text()
+// index of is -1 if char is not in array
+    if (myTeamArr.teamComp.length < 4 && myTeamArr.teamComp.indexOf(thisChar) === -1){
+        myTeamArr.teamComp.push(thisChar);
+        saveMyTeam(myTeamArr)
+    }
+}
 
 function getCopyrights(copyrights) {
     console.log(copyrights)
