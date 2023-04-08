@@ -5,6 +5,7 @@ var bio = $("#description");
 var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
 var charName = "storm"
 var wikiPageName = "Storm_(Marvel_Comics)"
+var imgName = "File:Storm_(Ororo_Munroe).png";
 
 async function getCharData(charName) {
     try {
@@ -16,9 +17,7 @@ async function getCharData(charName) {
             return;
             }
         var data = await rawData.json()
-        var picUrl = data.data.results[0].thumbnail.path+".jpg"
         var cDbName = data.data.results[0].name
-        picEl.attr("src", picUrl)
         charNamPage.text(cDbName)
     } catch(err) {
         $('#modal-main-txt').text("Error: Files not found!")
@@ -48,5 +47,25 @@ async function wikipedia (wikiPageName) {
     }
 }
 
+async function wikiPic (imgName) {
+    try{
+        var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=imageinfo&titles=" + imgName + "&formatversion=2&iiprop=url"
+        var rawData = await fetch(queryURL)
+        if (rawData.status !== 200) {
+            $('#modal-main-txt').text("Error: Files not found!")
+            $('#errorModal').modal('show')
+            return;
+            }
+        var data = await rawData.json()
+        var imgURL = data.query.pages[0].imageinfo[0].url;
+        picEl.attr("src", imgURL)
+    } catch(err) {
+        $('#modal-main-txt').text("Error: Files not found!")
+        $('#errorModal').modal('show')
+    }
+   
+}
+
 wikipedia(wikiPageName);
 getCharData(charName);
+wikiPic(imgName);

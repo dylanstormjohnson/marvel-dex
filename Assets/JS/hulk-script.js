@@ -42,7 +42,7 @@ async function wikipedia (wikiPageName) {
         bioText[0] = bioText[0].replace("the character", "the Hulk")
         bioText = bioText.join("");
         bio.text(bioText)
-    } catch(err) {
+        } catch(err) {
         $('#modal-main-txt').text("Error: Files not found!")
         $('#errorModal').modal('show')
     }
