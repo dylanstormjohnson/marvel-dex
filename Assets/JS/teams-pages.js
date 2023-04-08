@@ -47,10 +47,11 @@ function marvelTeam() {
     charName.text(charArr[i])
     charName.addClass("pt-4")
     idArr[i].append(charName);
-
     var linkToPage = $("<a>");
     linkToPage.text("Link to Bio");
+    console.log(idArr[i].text());
     linkToPage.attr("href", "./" + idArr[i].text() + ".html")
+    console.log(linkToPage)
     linkToPage.addClass("flex-wrap")
     idArr[i].append(linkToPage);
 
