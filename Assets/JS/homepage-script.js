@@ -29,16 +29,21 @@ getImgs();
 
 // gets comic pics and dynamically adds to page
 async function getComicData(comicId, img) {
-    var queryURL = "https://gateway.marvel.com:443/v1/public/comics/" + comicId + "?apikey=" + apiKey
-    var rawData = await fetch(queryURL)
-    /* If API call fails, */
-    // if (!rawData.ok) {
-    //     console.log("Whoops")
-    //     return;
-    // }
-    var data = await rawData.json()
-    var imgURL = data.data.results[0].images[0].path + ".jpg"
-    img.attr("src", imgURL)
+    try {
+        var queryURL = "https://gateway.marvel.com:443/v1/public/comics/" + comicId + "?apikey=" + apiKey
+        var rawData = await fetch(queryURL)
+        if (rawData.status !== 200) {
+            $('#modal-main-txt').text("Error: Files not found!")
+            $('#errorModal').modal('show')
+            return;
+        }
+        var data = await rawData.json()
+        var imgURL = data.data.results[0].images[0].path + ".jpg"
+        img.attr("src", imgURL)
+    } catch(err) {
+        $('#modal-main-txt').text("Error: Files not found!")
+        $('#errorModal').modal('show')
+    }
 }
 
 function getImgs() {

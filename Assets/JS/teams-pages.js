@@ -14,7 +14,9 @@ var howardTheDuck = $("#howardTheDuck");
 var ironMan = $("#ironMan");
 var captainAmerica = $("#captainAmerica");
 var thor = $("#thor");
-var doctorStrange = $("#doctorStrange");
+var doctorStrange = $("#hulk");
+
+var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
 
 
 // create a function to dynamically add characters on each team
@@ -36,7 +38,7 @@ function marvelTeam() {
     charArr = ["Groot", "Rocket", "Yondu", "Howard the Duck"]
   } else if (teamName.text() === "Avengers") {
     idArr = [ironMan, captainAmerica, thor, doctorStrange]
-    charArr = ["Iron Man", "Captain America", "Thor", "Doctor Strange"]
+    charArr = ["Iron Man", "Captain America", "Thor", "Hulk"]
   }
 
 // 4 characters in each team, create an h3, add an image, and a link to the bio page
@@ -45,22 +47,45 @@ function marvelTeam() {
     charName.text(charArr[i])
     charName.addClass("pt-4")
     idArr[i].append(charName);
-
-
-    var charImg = $("<img>");
-    charImg.attr("src", "./Assets/Images/Screenshot 2023-03-27 at 8.36.28 PM.png")
-    charImg.addClass("img-fluid");
-    idArr[i].append(charImg);
-
+   
     var linkToPage = $("<a>");
     linkToPage.text("Link to Bio");
     linkToPage.attr("href", "./" + idArr[i].text() + ".html")
     linkToPage.addClass("flex-wrap")
     idArr[i].append(linkToPage);
-    
-  
+      
   }
 
+  // adds imgs based on team name
+  for (var i=0; i<4; i++){
+  if  (teamName.text() === "Avengers") {
+    getAvengersImg(charArr[i], idArr[i]);
+  }
+  }
 }
 
 marvelTeam()
+
+// Get Avengers Pics function
+
+async function getAvengersImg(charArr, idArr) {
+  try {
+      var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charArr +  "&apikey=" + apiKey;
+      var rawData = await fetch(queryURL)
+      if (rawData.status !== 200) {
+          $('#modal-main-txt').text("Error: Files not found!")
+          $('#errorModal').modal('show')
+          return;
+          }
+      var data = await rawData.json()
+      var picUrl = data.data.results[0].thumbnail.path+".jpg"
+      var charImg = $("<img>");
+      charImg.attr("src", picUrl)
+      charImg.addClass("img-fluid");
+      idArr.append(charImg);
+  } catch(err) {
+      console.log("error-not 404")
+      $('#modal-main-txt').text("Error: Files not found!")
+      $('#errorModal').modal('show')
+  }
+}
