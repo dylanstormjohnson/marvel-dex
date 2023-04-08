@@ -18,9 +18,8 @@ var doctorStrange = $("#hulk");
 
 var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
 
-var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
-
 // create a function to dynamically add characters on each team
+
 function marvelTeam() {
   var charArr = [];
   var idArr = [];
@@ -49,73 +48,24 @@ function marvelTeam() {
     charName.addClass("pt-4")
     idArr[i].append(charName);
 
-    var charImg = $("<img>");
-
-    // dynamically create the images of the characters in each team
-    async function characterImage() {
-      var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charName.text() +  "&apikey=" + apiKey;
-      var rawData = await fetch(queryURL)
-      /* If API call fails, */
-      // if (!rawData.ok) {
-      //     console.log("Whoops")
-      //     return;
-      // }
-      var data = await rawData.json()
-      var picUrl = data.data.results[0].thumbnail.path+".jpg"
-      console.log(picUrl)
-      charImg.attr("src", picUrl)
-      // charImg.addClass("img-fluid");
-      // idArr[i].append(charImg);
-
-  }
-
-  characterImage()
-
-    
-
     var linkToPage = $("<a>");
     linkToPage.text("Link to Bio");
     linkToPage.attr("href", "./" + idArr[i].text() + ".html")
     linkToPage.addClass("flex-wrap")
     idArr[i].append(linkToPage);
-    
-  
+
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-marvelTeam()
-
 
   // adds imgs based on team name
   for (var i=0; i<4; i++){
-    if  (teamName.text() === "Avengers") {
+    if  (teamName.text() === "Avengers" || teamName.text() === "X-Force") {
       getAvengersImg(charArr[i], idArr[i]);
     }
-    }
+  }
+}
+
+
+marvelTeam()
 
 
     
