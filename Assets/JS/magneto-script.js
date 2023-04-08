@@ -15,7 +15,7 @@ async function getCharData(charName) {
             $('#modal-main-txt').text("Error: Files not found!")
             $('#errorModal').modal('show')
             return;
-            }
+        }
         var data = await rawData.json()
         var cDbName = data.data.results[0].name
         charNamPage.text(cDbName)
