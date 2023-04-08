@@ -24,9 +24,9 @@ function marvelTeam() {
   var charArr = [];
   var idArr = [];
   var teams = ["X-Men", "X-Force", "Guardians of the Galaxy", "Avengers"];
+}
 
   // check which team page we are in to choose the right characters array
-  console.log(teamName.text())
   if (teamName.text() === "X-Men") {
     idArr = [magneto, storm, gambit, nightCrawler]
     charArr = ["Magneto", "Storm", "Gambit", "Night Crawler"]
@@ -49,9 +49,8 @@ function marvelTeam() {
     idArr[i].append(charName);
     var linkToPage = $("<a>");
     linkToPage.text("Link to Bio");
-    console.log(idArr[i].text());
-    linkToPage.attr("href", "./" + idArr[i].text() + ".html")
-    console.log(linkToPage)
+    var linkText = idArr[i].text().replace(/\s/g, "");
+    linkToPage.attr("href", "./" + linkText + ".html")
     linkToPage.addClass("flex-wrap")
     idArr[i].append(linkToPage);
 
@@ -59,20 +58,51 @@ function marvelTeam() {
 
   // adds imgs based on team name
   for (var i=0; i<4; i++){
+    console.log(teamName.text())
     if  (teamName.text() === "Avengers" || teamName.text() === "X-Force") {
-      getAvengersImg(charArr[i], idArr[i]);
+      getMarvelImg(charArr[i], idArr[i]);
+    }
+    else if (teamName.text() === "Guardians of the Galaxy") {
+        if (charArr[i] ===  "Howard the Duck") {
+          getMarvelImg(charArr[i], idArr[i]);
+        }
+        else if(charArr[i] === "Rocket"){
+          getMarvelImg("Rocket Raccoon", idArr[i]);
+        }
+        else if(charArr[i] === "Groot") {
+          var imgName = "File:I_am_Groot_vol_1.jpeg";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+        else if (charArr[i] === "Yondu") {
+          var imgName = "File:Guardians_of_the_Galaxy_44.jpg";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+    }
+    else if (teamName.text() === "X-Men") {
+        if (charArr[i] === "Magneto"){
+          var imgName = "File:Magneto_(Marvel_Comics_character).jpg";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+        else if (charArr[i] === "Storm") {
+          var imgName = "File:Storm_(Ororo_Munroe).png";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+        else if (charArr[i] === "Gambit") {
+          var imgName = "File:Gambit_(Marvel_Comics).png";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+        else if (charArr[i] === "Night Crawler") {
+          getMarvelImg("Nightcrawler", idArr[i]);
+        }
     }
   }
-}
+
 
 
 marvelTeam()
 
-
-    
-// Get Avengers and X-Force Pics function
-
-async function getAvengersImg(charArr, idArr) {
+// Get Marvel database function
+async function getMarvelImg(charArr, idArr) {
   try {
       var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charArr +  "&apikey=" + apiKey;
       var rawData = await fetch(queryURL)
@@ -92,4 +122,26 @@ async function getAvengersImg(charArr, idArr) {
       $('#modal-main-txt').text("Error: Files not found!")
       $('#errorModal').modal('show')
   }
+}
+
+// Get Wikipedia images 
+async function wikiPic(charName, picName, idArr) {
+  try{
+    var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=imageinfo&titles=" + picName + "&formatversion=2&iiprop=url"
+    var rawData = await fetch(queryURL)
+    if (rawData.status !== 200) {
+        $('#modal-main-txt').text("Error: Files not found!")
+        $('#errorModal').modal('show')
+        return;
+        }
+    var data = await rawData.json()
+    var imgURL = data.query.pages[0].imageinfo[0].url;
+    var charImg = $("<img>");
+    charImg.attr("src", imgURL)
+    charImg.addClass("img-fluid");
+    idArr.append(charImg);
+} catch(err) {
+    $('#modal-main-txt').text("Error: Files not found!")
+    $('#errorModal').modal('show')
+}
 }
