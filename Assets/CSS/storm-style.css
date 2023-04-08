@@ -1,5 +1,6 @@
 img {
     max-width: 100%;
+    min-width: 300px;
     background-color: purple;
     border-radius: 20px;
     box-shadow: 0px 0px 15px black;
@@ -17,21 +18,7 @@ img {
     height: 35px;
     bottom: 25px;
     right: 25px;
-}
-
-#specialPlacesText {
-    text-align: center;
-    height: 100px; 
-    width: 70%;
-    border: 5px groove black;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-size: calc(16px + .5vw);
+    background-color: gray;
 }
 
 h3 {
@@ -47,6 +34,11 @@ h3 {
 }
 
 #description {
+    font-size: calc(16px + .7vw);
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
+    background: black;
+    color: yellow;
+    border: groove 5px white;
+    box-shadow: 5px 5px 5px gray;
 }
