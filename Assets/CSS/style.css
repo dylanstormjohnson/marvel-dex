@@ -24,8 +24,6 @@ main {
 }
 
 #xForce a, #xMen a, #avengers a, #guardians a {
-  /* width: 40%;
-  height: 50%; */
   text-decoration: none;
   color:black;
 }
@@ -40,6 +38,10 @@ main {
   justify-content: center !important;
 }
 
+#copyrights a, #copyrights p {
+  color: white; 
+  font-size: calc(5px + .5vw);
+}
 
 #dropdownSearch {
   background: rgb(8,0,1);
@@ -84,42 +86,12 @@ main {
   font-size: 20px;
 }
 
-#dropdown {
-  padding-left: 20px;
-  padding-top: 20px;
 
-}
-
-.dropdown-menu {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-#copyrights a, #copyrights p {
-  color: white; 
-  font-size: calc(10px + .5vw);
-  margin:0;
-  padding-right: 30px;
-  line-height: auto;
-}
-
-footer{
-  background: rgb(8,0,1);
-  background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
-  color: white;
-  height: auto;
-}
-
-@media screen and (max-width: 683px){ 
-  #dropdownMenuBtn{
-    font-size: 1.5rem;
-  }
 
   /* #dropdown{
     align-content: center;
   } */
   
-}
 
 @media screen and (max-width: 535px){ 
   #dropdownMenuBtn{

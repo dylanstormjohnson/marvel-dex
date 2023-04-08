@@ -19,6 +19,7 @@ img {
 }
 
 #addToTeam {
+    text-decoration: underline;
     position: absolute;
     width: 180px;
     height: 40px;
@@ -50,11 +51,6 @@ img {
 
 #GoogleMaps {
     padding-top:2vw;
-}
-
-#GoogleMapWidget {
-    height: 200px; 
-    width: 200px; 
 }
 
 #description{
