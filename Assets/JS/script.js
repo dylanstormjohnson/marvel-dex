@@ -45,7 +45,6 @@ function addHero() {
         $('#modal-main-txt').text("You already have a full team! Remove a team member first!")
         $('#errorModal').modal('show');
     }
-   
 }
 
 function getCopyrights(copyrights) {
