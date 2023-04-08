@@ -17,7 +17,7 @@ function init() {
     <div class="row team col-sm-6 d-flex" id="playerOne">
       <p>${charName}</p>
       <img src="" class="img-fluid" id=${charName} alt="Marvel Character">
-      <button class='remove-hero flex-column'>Remove Hero</button>
+      <button class='remove-hero'>Remove Hero</button>
     </div>
     `
     characterContainerDivEl.append(html);
