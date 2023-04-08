@@ -14,7 +14,7 @@ function init() {
   for (var i = 0; i < myTeam.teamComp.length; i++) {
     var charName = myTeam.teamComp[i];
     var html = `
-    <div class="team col-3" id="playerOne">
+    <div class="row team col-3" id="playerOne">
       <p>${charName}</p>
       <img src="" class="img-fluid" id=${charName} alt="Marvel Character">
       <button class='remove-hero' >Remove Hero</button>
@@ -55,7 +55,10 @@ characterContainerDivEl.on('click', '.remove-hero', function(event) {
   <i class="fa-solid fa-plus fa-2xl" style="font-size: 3rem" ></i>
   </div>
   ` 
-  $(event.target).parent('.team').html(html)
+  var parentContainer =  $(event.target).parent('.team')
+  parentContainer.addClass("d-flex justify-content-center align-items-center")
+
+  parentContainer.html(html)
 });
 
 
