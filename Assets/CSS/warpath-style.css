@@ -18,6 +18,7 @@ img {
     height: 33px;
     bottom: 25px;
     right: 25px;
+    background-color: rgb(172, 18, 18);
 }
 
 #specialPlacesText {
@@ -29,10 +30,6 @@ img {
 
 #specialPlace {
     font-family: 'Metal Mania', cursive;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
 }
 
 #description{
@@ -61,3 +58,4 @@ h3 {
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
 }
+

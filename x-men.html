@@ -51,33 +51,47 @@
       </div>
     </nav>
   </header>
-  
+  <!-- Modal -->
+  <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Egads, true believers!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="modal-main-txt"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <main>
     <div class="container text-center mt-0">
       <h1 class ="pt-4" id="teamName">X-Men</h1>
-        <p>add description</p>
-      <div class="container">
+      <div class="container d-flex flex-column">
         <div class="row mt-4">
-          <div class="col-3" id="magneto"></div>
-          <div class="col-3" id="storm"></div>
-          <div class="col-3" id="gambit"></div>
-          <div class="col-3" id="nightCrawler"></div>
+          <div class="col-sm-6" id="magneto"></div>
+          <div class="col-sm-6" id="storm"></div>
+          <div class="col-sm-6" id="gambit"></div>
+          <div class="col-sm-6" id="nightCrawler"></div>
+        </div>
       </div>
-      <h4 class="mt-5">Other Notable Characters</h4>
-        <ul class="list-unstyled">
-          <li>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta rerum fugiat tempore repudiandae dicta non, maxime a, sed corporis veniam excepturi, neque quisquam. Quisquam cupiditate ratione exercitationem nulla soluta?</li>
-        </ul>
     </div>
   </main>
-  <footer class="text-center" id="copyrights">
-    Data provided by Marvel. &copy;  2023 Marvel.
-  </footer>
+  <footer class="fs-3 text-center" id="copyrights"></footer>
+
   <script
     src="https://code.jquery.com/jquery-3.6.4.js"
     integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
     crossorigin="anonymous">
 </script>  
 <script src="./Assets/JS/teams-pages.js"></script>
+<script src="./Assets/JS/script.js"></script>
 
 </body>
 </html>
