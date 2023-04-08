@@ -69,7 +69,7 @@ marvelTeam()
 
 
     
-// Get Avengers Pics function
+// Get Avengers and X-Force Pics function
 
 async function getAvengersImg(charArr, idArr) {
   try {

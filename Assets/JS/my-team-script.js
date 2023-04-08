@@ -14,7 +14,7 @@ function init() {
   for (var i = 0; i < myTeam.teamComp.length; i++) {
     var charName = myTeam.teamComp[i];
     var html = `
-    <div class="row team col-3" id="playerOne">
+    <div class="row team col-sm-6" id="playerOne">
       <p>${charName}</p>
       <img src="" class="img-fluid" id=${charName} alt="Marvel Character">
       <button class='remove-hero' >Remove Hero</button>
