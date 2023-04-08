@@ -51,7 +51,7 @@ function marvelTeam() {
 
     // dynamically create the images of the characters in each team
     async function characterImage() {
-      var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
+      var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charName.text() +  "&apikey=" + apiKey;
       var rawData = await fetch(queryURL)
       /* If API call fails, */
       // if (!rawData.ok) {
@@ -61,7 +61,7 @@ function marvelTeam() {
       var data = await rawData.json()
       var picUrl = data.data.results[0].thumbnail.path+".jpg"
       console.log(picUrl)
-      // charImg.attr("src", picUrl)
+      charImg.attr("src", picUrl)
       // charImg.addClass("img-fluid");
       // idArr[i].append(charImg);
 
