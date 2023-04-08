@@ -29,21 +29,21 @@ async function getCharData(charName) {
 async function wikipedia (wikiPageName) {
     try {
         var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=extracts&titles=" + wikiPageName + "&formatversion=2&exsentences=10&exlimit=1&explaintext=1"
-    var rawData = await fetch(queryURL)
-    if (rawData.status !== 200) {
-        $('#modal-main-txt').text("Error: Files not found!")
-        $('#errorModal').modal('show')
-        return;
-        }
-    var data = await rawData.json()
-    var bioText = data.query.pages[0].extract
-    bioText = bioText.split(/(\.)/)
-    bioText.splice(0, 2)
-    bioText[0] = bioText[0].replace("the character", "Thor Odinson")
-    bioText.splice(10, 2)
-    bioText.splice(12, 11)
-    bioText = bioText.join("");
-    bio.text(bioText)
+        var rawData = await fetch(queryURL)
+        if (rawData.status !== 200) {
+            $('#modal-main-txt').text("Error: Files not found!")
+            $('#errorModal').modal('show')
+            return;
+            }
+        var data = await rawData.json()
+        var bioText = data.query.pages[0].extract
+        bioText = bioText.split(/(\.)/)
+        bioText.splice(0, 2)
+        bioText[0] = bioText[0].replace("the character", "Thor Odinson")
+        bioText.splice(10, 2)
+        bioText.splice(12, 11)
+        bioText = bioText.join("");
+        bio.text(bioText)
     } catch(err) {
         $('#modal-main-txt').text("Error: Files not found!")
         $('#errorModal').modal('show')

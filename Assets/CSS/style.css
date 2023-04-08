@@ -49,8 +49,6 @@ main {
   font-size:1.5rem;
   padding-left: 10px;
   width:inherit;
-
-
 }
 
 #dropdownSearch:hover{
@@ -67,7 +65,23 @@ main {
   color: white;
   font-size: 2rem;
   padding: 0 2px 5px 5px;
+}
 
+#titleContainer{
+  position: relative;
+  size: auto;
+}
+
+.fa-pen{
+  position: absolute;
+  top: 1.5rem;
+  right: calc(-15px - .1vw)
+}
+
+.fa-pen:hover {
+  color: rgb(255, 0, 0);
+  top: 1rem;
+  font-size: 20px;
 }
 
 #dropdown {
