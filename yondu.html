@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Marvel:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
 
     <title>Yondu</title>
 </head>
@@ -68,15 +69,15 @@
             <div class="d-flex justify-content-center align-self-center col-lg-4 col-md-9 col-sm-9 col-9">
                 <div class="d-flex justify-content-center"id="img-div">
                     <img id="heroPic" src="">
-                    <button id="addToTeam">
-                        Add To Team
-                    </button>
+                    <button class="btn btn-danger btn-outline-info" id="addToTeam">Add To<br>Team!</button>
                 </div>
             </div>
             
             <div id="char-bio" class="d-flex flex-column col-lg-7">
                 <h3 class="align-self-center" id="charName"></h3>
-                <p id="description"></p>
+                <div class="bg-info bg-gradient text-danger rounded" id="descriptionDiv">
+                  <p class="fs-5" id="description"></p>
+                </div>
             </div>
         </section>
     </main>
