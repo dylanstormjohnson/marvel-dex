@@ -58,31 +58,45 @@ function marvelTeam() {
 
   // adds imgs based on team name
   for (var i=0; i<4; i++){
+    console.log(teamName.text())
     if  (teamName.text() === "Avengers" || teamName.text() === "X-Force") {
       getMarvelImg(charArr[i], idArr[i]);
     }
-    if (teamName.text() === "Guardians of the Galaxy") {
-      if (charArr[i] ===  "Howard the Duck") {
-        getMarvelImg(charArr[i], idArr[i]);
-      }
-      else if(charArr[i] === "Rocket"){
-        getMarvelImg("Rocket Raccoon", idArr[i]);
-      }
-      else if(charArr[i] === "Groot") {
-        var imgName = "File:I_am_Groot_vol_1.jpeg";
-        wikiPic(charArr[i], imgName, idArr[i]);
-      }
-      else if (charArr[i] === "Yondu") {
-        var imgName = "File:Guardians_of_the_Galaxy_44.jpg";
-        wikiPic(charArr[i], imgName, idArr[i]);
-      }
-    if (teamName.text() === "X-men") {
-      if (charArr[i]){
-        var stuff;
-      }
+    else if (teamName.text() === "Guardians of the Galaxy") {
+        if (charArr[i] ===  "Howard the Duck") {
+          getMarvelImg(charArr[i], idArr[i]);
+        }
+        else if(charArr[i] === "Rocket"){
+          getMarvelImg("Rocket Raccoon", idArr[i]);
+        }
+        else if(charArr[i] === "Groot") {
+          var imgName = "File:I_am_Groot_vol_1.jpeg";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+        else if (charArr[i] === "Yondu") {
+          var imgName = "File:Guardians_of_the_Galaxy_44.jpg";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+    }
+    else if (teamName.text() === "X-Men") {
+        if (charArr[i] === "Magneto"){
+          var imgName = "File:Magneto_(Marvel_Comics_character).jpg";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+        else if (charArr[i] === "Storm") {
+          var imgName = "File:Storm_(Ororo_Munroe).png";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+        else if (charArr[i] === "Gambit") {
+          var imgName = "File:Gambit_(Marvel_Comics).png";
+          wikiPic(charArr[i], imgName, idArr[i]);
+        }
+        else if (charArr[i] === "Night Crawler") {
+          getMarvelImg("Nightcrawler", idArr[i]);
+        }
     }
   }
-}
+
 
 
 marvelTeam()
