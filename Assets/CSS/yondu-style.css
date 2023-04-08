@@ -2,44 +2,52 @@ img {
     max-width: 100%;
     background-color: purple;
     border-radius: 20px;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 15px rgb(247, 25, 0);
+    border: 5px groove black;
 }
 
 #img-div {
+    font-family: 'Fruktur', cursive;
     position: relative;
     padding: 40px 15px 15px 15px;
     overflow: hidden;
 }
 
 #addToTeam {
+    text-decoration: underline;
     position: absolute;
-    width: 200px;
-    height: 30px;
+    width: 75px;
+    height: 60px;
     bottom: 25px;
     right: 20px;
 }
 
 #specialPlacesText {
     text-align: center;
-    height: 100px; 
+    height: 120px; 
     width: 70%;
-    border: 5px groove black;
+    border: 5px groove rgb(247, 25, 0);
+}
+
+#specialPlace {
+    font-family: 'Fruktur', cursive;
 }
 
 #GoogleMaps {
     padding-top:2vw;
 }
 
-#GoogleMapWidget {
-    height: 200px; 
-    width: 200px; 
-}
-
 #description{
+    font-family: 'Fruktur', cursive;
     font-size: calc(16px + .5vw);
 }
 
+#descriptionDiv {
+    box-shadow: 0px 0px 15px rgb(247, 25, 0);
+}
+
 h3 {
+    font-family: 'Fruktur', cursive;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(19, 232, 239);
