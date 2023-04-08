@@ -14,7 +14,7 @@ var howardTheDuck = $("#howardTheDuck");
 var ironMan = $("#ironMan");
 var captainAmerica = $("#captainAmerica");
 var thor = $("#thor");
-var doctorStrange = $("#hulk");
+var hulk = $("#hulk");
 
 var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
 
@@ -37,7 +37,7 @@ function marvelTeam() {
     idArr = [groot, rocket, yondu, howardTheDuck]
     charArr = ["Groot", "Rocket", "Yondu", "Howard the Duck"]
   } else if (teamName.text() === "Avengers") {
-    idArr = [ironMan, captainAmerica, thor, doctorStrange]
+    idArr = [ironMan, captainAmerica, thor, hulk]
     charArr = ["Iron Man", "Captain America", "Thor", "Hulk"]
   }
 

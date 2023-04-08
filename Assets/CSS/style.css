@@ -24,8 +24,6 @@ main {
 }
 
 #xForce a, #xMen a, #avengers a, #guardians a {
-  /* width: 40%;
-  height: 50%; */
   text-decoration: none;
   color:black;
 }
@@ -43,6 +41,7 @@ main {
 #copyrights a, #copyrights p {
   color: white; 
   font-size: calc(5px + .5vw);
+}
 
 #dropdownSearch {
   background: rgb(8,0,1);
@@ -87,13 +86,12 @@ main {
   font-size: 20px;
 }
 
-  }
+
 
   /* #dropdown{
     align-content: center;
   } */
   
-}
 
 @media screen and (max-width: 535px){ 
   #dropdownMenuBtn{
