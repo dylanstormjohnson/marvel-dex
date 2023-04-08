@@ -14,7 +14,7 @@ function init() {
   for (var i = 0; i < myTeam.teamComp.length; i++) {
     var charName = myTeam.teamComp[i];
     var html = `
-    <div class="row team col-sm-6 d-flex" id="playerOne">
+    <div class="team col-sm-12 col-lg-3 col-md-6 d-flex flex-column align-items-center" id="playerOne">
       <p>${charName}</p>
       <img src="" class="img-fluid" id=${charName} alt="Marvel Character">
       <button class='remove-hero flex-column'>Remove Hero</button>
@@ -28,14 +28,12 @@ function init() {
   for (var k = 0; k < 4 - myTeam.teamComp.length; k++) {
     var charName = myTeam.teamComp[i]
     var html = `
-    <div class="add-hero col-3 d-flex justify-content-center align-items-center">
+    <div class="add-hero col-sm-12 col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-center">
     <i class="fa-solid fa-plus fa-2xl" style="font-size: 3rem" ></i>
     </div>
     `
     characterContainerDivEl.append(html);
   }
-
-
 }
 
 init();

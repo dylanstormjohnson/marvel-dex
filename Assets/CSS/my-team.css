@@ -6,3 +6,13 @@ img {
 .remove-hero {
   /* width: 50px !important; */
 }
+
+.add-hero {
+  height: 20vh;
+}
+
+.team p{
+  font-size: 30px;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
