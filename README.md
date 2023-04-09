@@ -1,39 +1,21 @@
-# marvel-dex
+# Marvel-dex
 A Pokédex for Marvel Characters!!!!!!!
 
-char-bio-add
-=======
+Deployed link: https://dylanstormjohnson.github.io/marvel-dex/
 
-Marvel.dex: 
-Working Name: Marvel-dex
-App Description: Working encyclopedia for Marvel characters wherein specific characters can be researched, and specific information will be filled out while a map reveals a location important to that character. Starts with a team page helping users who may be unfamiliar with the Marvel universe.
-CSS Framework: Bootstrap
-List 2 Server Side APIs: Google Earth, NASA? (space location), Marvel
-How will local storage be used: List based on the last thing you researched. Build your own team? 
+Website screenshots:
+![Home page](./Assets/Images/homepage-screenshot.png)
+![Character page](./Assets/Images/characterbio-screenshot.png)
+![Teams page](./Assets/Images/teams-screenshot.png)
+![My team page](./Assets/Images/myteam-screenshot.png)
 
-Feature:
-Search button
-Team Rosters
-Build a team: separate page
-Home page: placeholder, dropdown, search button–makes suggestions (which opens new page),
-Streetview–places they’ve been; lookaround 
+In this project, we created an encyclopedia of Marvel characters. 
+To create the website, we used HTML, CSS, JQUERY, and two API keys, namely the Marvel and the Wikipedia API. We also used Bootstrap to help with styling our website.
 
-Drew: X Men–Magneto and Storm
-Beau: X Force–Deadpool and Wolverine; Bonus: Domino
-Storm: Avengers–Iron Man and Cap’n; Bonus: Black Widow, Hawkeye
-Braden: Avengers– Thor and Doc Strange
-Ester: Guardians–Rocket and Groot
-Caleb’s Requests: Hulkster and Howard the Duck
+We created four Marvel teams (X-Men, X-Force, Avengers and Guardians of the Galaxy), with four characters in each team. 
+We created a description for each character using the Wikipedia API, and we used the Marvel API to grab images for the characters, as well as their names. Certain images were also taken from Wikipedia, based on personal preference.
 
-To-Dos
-Layout
-Distribution of Duty
-Shared: CSS
+We used local storage for people to be able to create their own Marvel teams of four characters, where they can also name their own team. 
 
+In addition, the home page provides users with a dropdown with all the characters that are mentioned on the website, to help users who are unfamiliar with the Marvel universe. 
 
-https://developer.marvel.com/documentation/attribution
-<!-- Add to every page -->
-"Data provided by Marvel. © 2014 Marvel"
-
-
-main
