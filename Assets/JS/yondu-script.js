@@ -62,7 +62,7 @@ async function wikiPic (wikiPageName) {
         var rawImgData = await fetch (queryURLTwo)
         var imgData = await rawImgData.json();
         var imgURL = imgData.query.pages[0].imageinfo[0].url;
-        picEl.attr("src", imgURL)
+        picEl.attr({src: imgURL, alt:"Comic book cover of Yondu charging towards the viewer with two swords raised high while two blade-armed, green-skinned aliens following behind." })
     } catch(err) {
         $('#modal-main-txt').text("Error: Files not found!")
         $('#errorModal').modal('show')

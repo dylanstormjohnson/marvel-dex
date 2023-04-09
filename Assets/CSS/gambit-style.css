@@ -38,17 +38,6 @@ img {
     background-color: rgb(255, 255, 255);
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 100px; 
-    width: 70%;
-    border: 5px groove black;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
 #char-bio {
     padding-right: 15px;
 }
@@ -75,22 +64,4 @@ h3 {
     border: 5px ridge rgb(123, 119, 152);
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
     margin-bottom: 20px;
-}
-
-#specialPlacesText{
-    box-shadow: 5px 5px 8px rgb(110, 109, 109);
-    color: white;
-    background-color: rgb(0, 0, 0);
-    border: groove 5px rgb(152, 19, 172); 
-    height: auto;
-}
-
-#specialPlacesText h4 {
-    padding-top: 10px;
-}
-
-#specialPlacesText p {
-    padding: 0px 10px 0px 10px;
-    font-size: 20px;
-    
 }

@@ -38,12 +38,15 @@ main {
   justify-content: center !important;
 }
 
+footer div {
+  padding-top: 10px;
+}
+
 
 #copyrights a, #copyrights p {
   color: white; 
   font-size: calc(5px + .5vw);
   line-height: 3px;
-  padding-top: 10px;
 }
 
 #copyrights a{
