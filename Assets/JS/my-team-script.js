@@ -29,7 +29,7 @@ function init() {
     var charName = myTeam.teamComp[i]
     var html = `
     <div class="add-hero col-sm-12 col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-center">
-    <i class="fa-solid fa-plus fa-2xl" style="font-size: 7rem; font-family: 'Faster One', cursive; color:rgb(18, 157, 18);" ></i>
+    <i class="fa-solid fa-plus fa-2xl" style="font-size: 10rem; font-family: 'Faster One', cursive; color:rgb(18, 157, 18);" ></i>
     </div>
     `
     characterContainerDivEl.append(html);
@@ -50,7 +50,7 @@ characterContainerDivEl.on('click', '.remove-hero', function(event) {
   
   var html = `
   <div class="add-hero col-3 d-flex justify-content-center align-items-center">
-  <i class="fa-solid fa-plus fa-2xl" style="font-size: 3rem" ></i>
+  <i class="fa-solid fa-plus fa-2xl" style="font-size: 10rem; font-family: 'Faster One', cursive; color:rgb(18, 157, 18);" ></i>
   </div>
   ` 
   var parentContainer =  $(event.target).parent('.team')

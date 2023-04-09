@@ -10,6 +10,7 @@ img {
 }
 
 #img-div {
+    font-family: 'Akronim', cursive;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
@@ -54,6 +55,7 @@ img {
 }
 
 #description{
+    font-family: 'Akronim', cursive;
     font-size: calc(16px + .5vw);
     padding: 10px 40px 10px 40px;
     margin-left: 20px;
@@ -62,10 +64,11 @@ img {
     color: black;
     background-color: rgb(116, 144, 86);
     border: groove 10px rgb(62, 29, 68); 
-    
+    font-weight: 600;
 }
 
 h3 {
+    font-family: 'Akronim', cursive;
     text-align: center;
     font-size: calc(40px + .3vw);
     margin-bottom: 20px;

@@ -7,6 +7,7 @@ img {
 }
 
 #img-div {
+    font-family: 'Jolly Lodger', cursive;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
@@ -22,6 +23,7 @@ img {
 }
 
 h3 {
+    font-family: 'Jolly Lodger', cursive;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(0, 0, 0);
@@ -34,6 +36,7 @@ h3 {
 }
 
 #description {
+    font-family: 'Jolly Lodger', cursive;
     font-size: calc(16px + .7vw);
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
