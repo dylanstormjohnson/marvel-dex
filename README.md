@@ -1,6 +1,8 @@
 # Marvel-dex
 A Pokédex for Marvel Characters!!!!!!!
 
+Presentation: https://docs.google.com/presentation/d/1XiP7J6_-RmbYYTs6sx2u9QeK2sg3XrTQDd_s3FSZzf0/edit?usp=sharing
+
 Deployed link: https://dylanstormjohnson.github.io/marvel-dex/
 
 Website screenshots:
