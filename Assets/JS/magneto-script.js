@@ -62,7 +62,7 @@ async function wikiPic (imgName) {
             }
         var data = await rawData.json()
         var imgURL = data.query.pages[0].imageinfo[0].url;
-        picEl.attr("src", imgURL)
+        picEl.attr({src: imgURL, alt:"Magneto hovers in the air, his hand raised in effort, and behind him, two pillars of amalgamated metal form an X." })
     } catch(err) {
         $('#modal-main-txt').text("Error: Files not found!")
         $('#errorModal').modal('show')

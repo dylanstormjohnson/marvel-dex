@@ -1,11 +1,13 @@
 img {
     max-width: 100%;
+    min-width: 300px;
     background-color: purple;
     border-radius: 20px;
     box-shadow: 0px 0px 15px black;
 }
 
 #img-div {
+    font-family: 'Jolly Lodger', cursive;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
@@ -17,24 +19,11 @@ img {
     height: 35px;
     bottom: 25px;
     right: 25px;
-}
-
-#specialPlacesText {
-    text-align: center;
-    height: 100px; 
-    width: 70%;
-    border: 5px groove black;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-size: calc(16px + .5vw);
+    background-color: gray;
 }
 
 h3 {
+    font-family: 'Jolly Lodger', cursive;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(0, 0, 0);
@@ -47,6 +36,12 @@ h3 {
 }
 
 #description {
+    font-family: 'Jolly Lodger', cursive;
+    font-size: calc(16px + .7vw);
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
+    background: black;
+    color: yellow;
+    border: groove 5px white;
+    box-shadow: 5px 5px 5px gray;
 }

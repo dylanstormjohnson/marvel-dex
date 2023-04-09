@@ -16,3 +16,24 @@ img {
   padding-top: 20px;
   margin-bottom: 0px;
 }
+
+#teammateName {
+  font-family: 'Faster One', cursive;
+  color:rgb(18, 157, 18);
+}
+
+#teamName {
+  font-family: 'Bangers', cursive;
+  color: Purple;
+  
+}
+
+i:hover {
+  filter: brightness(150%);
+  text-shadow: 0px 0px 20px gold;
+}
+
+i:active {
+  filter: brightness(150%);
+  text-shadow: 0px 0px 20px rgb(100, 86, 6);
+}
