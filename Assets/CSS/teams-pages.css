@@ -1,3 +1,23 @@
 img {
   max-width: 100%;
 }
+
+#groot img {
+  max-width: 254px;
+  height: 392px;
+}
+
+#rocket img {
+  max-width: 254px;
+  height: 392px;
+}
+
+#yondu img {
+  max-width: 254px;
+  height: 392px;
+}
+
+#howardTheDuck img {
+  max-width: 254px;
+  height: 392px;
+}
