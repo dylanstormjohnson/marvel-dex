@@ -18,7 +18,7 @@ async function getCharData(charName) {
         var data = await rawData.json()
         var picUrl = data.data.results[0].thumbnail.path+".jpg"
         var cDbName = data.data.results[0].name
-        picEl.attr("src", picUrl)
+        picEl.attr({src: picUrl, alt:"Domino hurls a fist towards the viewer, her eye encased in the usual black circle." })
         charNamPage.text(cDbName)
     } catch(err) {
         $('#modal-main-txt').text("Error: Files not found!")
