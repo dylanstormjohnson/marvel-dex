@@ -15,9 +15,9 @@ function init() {
     var charName = myTeam.teamComp[i];
     var html = `
     <div class="team col-sm-12 col-lg-3 col-md-6 d-flex flex-column align-items-center" id="playerOne">
-      <p>${charName}</p>
+      <p id=teammateName>${charName}</p>
       <img src="" class="img-fluid" id=${charName} alt="Marvel Character">
-      <button class='remove-hero'>Remove Hero</button>
+      <button class='remove-hero btn btn-danger btn-outline-warning'>Remove Hero</button>
     </div>
     `
     characterContainerDivEl.append(html);
@@ -29,7 +29,7 @@ function init() {
     var charName = myTeam.teamComp[i]
     var html = `
     <div class="add-hero col-sm-12 col-lg-3 col-md-6 d-flex flex-column align-items-center justify-content-center">
-    <i class="fa-solid fa-plus fa-2xl" style="font-size: 3rem" ></i>
+    <i class="fa-solid fa-plus fa-2xl" style="font-size: 7rem; font-family: 'Faster One', cursive; color:rgb(18, 157, 18);" ></i>
     </div>
     `
     characterContainerDivEl.append(html);
@@ -196,10 +196,10 @@ function loadTeamName(myTeam) {
   formEl.html("");
   if (teamSaveName === "" || !teamSaveName) {
     var html =`        
-      <input type="text" id="teamNameInput" placeholder="Name Your Team">
+      <input type="text" id="teamNameInput" placeholder="Name Your Team!">
       <button id="submit-btn">Submit</button>
     `
-    $("#teamName").text("Name Your Team")
+    $("#teamName").text("Name Your Team!")
     formEl.append(html);
   }
   else {
