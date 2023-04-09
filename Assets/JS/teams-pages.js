@@ -30,15 +30,19 @@ function marvelTeam() {
   if (teamName.text() === "X-Men") {
     idArr = [magneto, storm, gambit, nightCrawler]
     charArr = ["Magneto", "Storm", "Gambit", "Night Crawler"]
+    linkArr = ["magneto", "storm", "gambit", "nightcrawler"]
   } else if (teamName.text() === "X-Force") {
     idArr = [deadpool, warpath, wolverine, domino]
     charArr = ["Deadpool", "Warpath", "Wolverine", "Domino"]
+    linkArr = ["deadpool", "warpath", "wolverine", "domino"]
   } else if (teamName.text() === "Guardians of the Galaxy") {
     idArr = [groot, rocket, yondu, howardTheDuck]
     charArr = ["Groot", "Rocket", "Yondu", "Howard the Duck"]
+    linkArr = ["groot", "rocket", "yondu", "howardTheDuck"]
   } else if (teamName.text() === "Avengers") {
     idArr = [ironMan, captainAmerica, thor, hulk]
     charArr = ["Iron Man", "Captain America", "Thor", "Hulk"]
+    linkArr = ["ironMan", "captainAmerica", "thor", "hulk"]
   }
 
 // 4 characters in each team, create an h3, add an image, and a link to the bio page
@@ -49,7 +53,9 @@ function marvelTeam() {
     idArr[i].append(charName);
     var linkToPage = $("<a>");
     linkToPage.text("Link to Bio");
-    var linkText = idArr[i].text().replace(/\s/g, "");
+    // var linkText = idArr[i].text().replace(/\s/g, "");
+    var linkText = linkArr[i];
+
     linkToPage.attr("href", "./" + linkText + ".html")
     linkToPage.addClass("flex-wrap")
     idArr[i].append(linkToPage);
