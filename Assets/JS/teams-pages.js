@@ -105,7 +105,7 @@ marvelTeam()
 // Get Marvel database function
 async function getMarvelImg(charArr, idArr) {
   try {
-      var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charArr +  "&apikey=" + apiKey;
+      var queryURL = "https://gateway.marvel.com/v1/public/characters?name="+ charArr +  "&apikey=" + apiKey;
       var rawData = await fetch(queryURL)
       if (rawData.status !== 200) {
           $('#modal-main-txt').text("Error: Files not found!")
