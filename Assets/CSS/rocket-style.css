@@ -10,6 +10,7 @@ img {
 }
 
 #img-div {
+    font-family: 'Acme', sans-serif;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
@@ -57,6 +58,7 @@ img {
 }
 
 #description{
+    font-family: 'Acme', sans-serif;
     font-size: calc(16px + .5vw);
     padding: 10px 40px 10px 40px;
     margin-left: 20px;
@@ -69,6 +71,7 @@ img {
 }
 
 h3 {
+    font-family: 'Acme', sans-serif;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(110, 209, 212);

@@ -6,6 +6,7 @@ img {
 }
 
 #img-div {
+    font-family: 'Germania One', cursive;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
@@ -32,10 +33,12 @@ img {
 }
 
 #description{
+    font-family: 'Germania One', cursive;
     font-size: calc(16px + .5vw);
 }
 
 h3 {
+    font-family: 'Germania One', cursive;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(198, 201, 21);

@@ -10,6 +10,7 @@ img {
 }
 
 #img-div {
+    font-family: 'Allerta Stencil', sans-serif;
     position: relative;
     padding: 40px 15px 15px 15px;
 }
@@ -17,7 +18,7 @@ img {
 #addToTeam {
     text-decoration: underline;
     position: absolute;
-    width: 115px;
+    width: 135px;
     height: 35px;
     bottom: 25px;
     right: 25px;
@@ -25,6 +26,7 @@ img {
 }
 
 h3 {
+    font-family: 'Allerta Stencil', sans-serif;
     text-align: center;
     font-size: calc(40px + .3vw);
     background-color: rgb(110, 12, 135);
@@ -37,7 +39,8 @@ h3 {
 }
 
 #description {
-    font-size: calc(16px + .6vw);
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: calc(10px + .6vw);
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
     background-color: rgb(90, 6, 90);
