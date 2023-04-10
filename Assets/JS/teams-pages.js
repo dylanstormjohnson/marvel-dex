@@ -23,6 +23,7 @@ var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
 function marvelTeam() {
   var charArr = [];
   var idArr = [];
+  var linkArr = [];
   var teams = ["X-Men", "X-Force", "Guardians of the Galaxy", "Avengers"];
 }
 
@@ -48,11 +49,10 @@ function marvelTeam() {
 // 4 characters in each team, create an h3, add an image, and a link to the bio page
   for (var i=0; i<4; i++){
     var charName = $("<h3>")
-    var linkText = linkArr[i];
     charName.text(charArr[i])
     idArr[i].append(charName);
     // add link behind h3
-    $(charName).wrap("<a href='./" + linkText + ".html'>");
+    $(charName).wrap("<a href='./" + linkArr[i] + ".html'>");
     charName.addClass("pt-4 text-dark")
 
   }
@@ -61,39 +61,39 @@ function marvelTeam() {
   for (var i=0; i<4; i++){
     console.log(teamName.text())
     if  (teamName.text() === "Avengers" || teamName.text() === "X-Force") {
-      getMarvelImg(charArr[i], idArr[i]);
+      getMarvelImg(charArr[i], idArr[i], linkArr[i]);
     }
     else if (teamName.text() === "Guardians of the Galaxy") {
         if (charArr[i] ===  "Howard the Duck") {
-          getMarvelImg(charArr[i], idArr[i]);
+          getMarvelImg(charArr[i], idArr[i], linkArr[i]);
         }
         else if(charArr[i] === "Rocket"){
-          getMarvelImg("Rocket Raccoon", idArr[i]);
+          getMarvelImg("Rocket Raccoon", idArr[i], linkArr[i]);
         }
         else if(charArr[i] === "Groot") {
           var imgName = "File:I_am_Groot_vol_1.jpeg";
-          wikiPic(charArr[i], imgName, idArr[i]);
+          wikiPic(charArr[i], imgName, idArr[i], linkArr[i]);
         }
         else if (charArr[i] === "Yondu") {
           var imgName = "File:Guardians_of_the_Galaxy_44.jpg";
-          wikiPic(charArr[i], imgName, idArr[i]);
+          wikiPic(charArr[i], imgName, idArr[i], linkArr[i]);
         }
     }
     else if (teamName.text() === "X-Men") {
         if (charArr[i] === "Magneto"){
           var imgName = "File:Magneto_(Marvel_Comics_character).jpg";
-          wikiPic(charArr[i], imgName, idArr[i]);
+          wikiPic(charArr[i], imgName, idArr[i], linkArr[i]);
         }
         else if (charArr[i] === "Storm") {
           var imgName = "File:Storm_(Ororo_Munroe).png";
-          wikiPic(charArr[i], imgName, idArr[i]);
+          wikiPic(charArr[i], imgName, idArr[i], linkArr[i]);
         }
         else if (charArr[i] === "Gambit") {
           var imgName = "File:Gambit_(Marvel_Comics).png";
-          wikiPic(charArr[i], imgName, idArr[i]);
+          wikiPic(charArr[i], imgName, idArr[i], linkArr[i]);
         }
         else if (charArr[i] === "Night Crawler") {
-          getMarvelImg("Nightcrawler", idArr[i]);
+          getMarvelImg("Nightcrawler", idArr[i], linkArr[i]);
         }
     }
   }
@@ -103,7 +103,7 @@ function marvelTeam() {
 marvelTeam()
 
 // Get Marvel database function
-async function getMarvelImg(charArr, idArr) {
+async function getMarvelImg(charArr, idArr, linkArr) {
   try {
       var queryURL = "https://gateway.marvel.com/v1/public/characters?name="+ charArr +  "&apikey=" + apiKey;
       var rawData = await fetch(queryURL)
@@ -119,7 +119,8 @@ async function getMarvelImg(charArr, idArr) {
       charImg.addClass("img-fluid");
       idArr.append(charImg);
       // add link to bios page behind image
-      $(charImg).wrap("<a href='./" + linkText + ".html'>");
+      $(charImg).wrap("<a href='./" + linkArr + ".html'>");
+      console.log(linkArr)
   } catch(err) {
       console.log("error-not 404")
       $('#modal-main-txt').text("Error: Files not found!")
@@ -128,7 +129,7 @@ async function getMarvelImg(charArr, idArr) {
 }
 
 // Get Wikipedia images 
-async function wikiPic(charName, picName, idArr) {
+async function wikiPic(charName, picName, idArr, linkArr) {
   try{
     var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=imageinfo&titles=" + picName + "&formatversion=2&iiprop=url"
     var rawData = await fetch(queryURL)
@@ -143,7 +144,7 @@ async function wikiPic(charName, picName, idArr) {
     charImg.attr("src", imgURL)
     charImg.addClass("img-fluid");
     idArr.append(charImg);
-    $(charImg).wrap("<a href='./" + linkText + ".html'>");
+    $(charImg).wrap("<a href='./" + linkArr + ".html'>");
 } catch(err) {
     $('#modal-main-txt').text("Error: Files not found!")
     $('#errorModal').modal('show')
