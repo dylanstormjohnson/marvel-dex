@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,12 +12,7 @@ img {
     box-shadow: 0px 0px 15px rgb(255, 247, 0);
 }
 
-#img-div {
-    font-family: 'Big Shoulders Stencil Text', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -21,30 +23,7 @@ img {
     background-color: rgb(221, 8, 8);
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 95px; 
-    width: 70%;
-    border: 5px groove rgb(255, 247, 0);
-}
-
-#specialPlace {
-    font-family: 'Big Shoulders Stencil Text', cursive;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-family: 'Big Shoulders Stencil Text', cursive;
-    font-size: calc(16px + .5vw);
-}
-
-#descriptionDiv {
-    box-shadow: 0px 0px 15px rgb(255, 247, 0);
-}
-
+/* Char name */
 h3 {
     font-family: 'Big Shoulders Stencil Text', cursive;
     text-align: center;
@@ -58,7 +37,14 @@ h3 {
     box-shadow: 5px 5px 5px rgb(255, 247, 0);
 }
 
-#description {
+/* Bio box and font */
+#descriptionDiv {
+    box-shadow: 0px 0px 15px rgb(255, 247, 0);
+}
+
+#description{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: calc(16px + .5vw);
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
 }

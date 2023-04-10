@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Allerta Stencil', sans-serif;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -9,12 +16,7 @@ img {
     width: 350px;
 }
 
-#img-div {
-    font-family: 'Allerta Stencil', sans-serif;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -25,6 +27,7 @@ img {
     background-color: brown;
 }
 
+/* Char Name */
 h3 {
     font-family: 'Allerta Stencil', sans-serif;
     text-align: center;
@@ -38,9 +41,10 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
+/* Bio Text */
 #description {
     font-family: 'Allerta Stencil', sans-serif;
-    font-size: calc(10px + .6vw);
+    font-size: calc(14px + .7vw);
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
     background-color: rgb(90, 6, 90);

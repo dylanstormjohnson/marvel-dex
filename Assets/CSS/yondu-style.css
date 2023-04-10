@@ -1,3 +1,11 @@
+/* Img container */
+#img-div {
+    font-family: 'Fruktur', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+    overflow: hidden;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -6,13 +14,7 @@ img {
     border: 5px groove black;
 }
 
-#img-div {
-    font-family: 'Fruktur', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-    overflow: hidden;
-}
-
+/* Button */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -23,30 +25,20 @@ img {
     background-color: rgb(184, 39, 39);
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 120px; 
-    width: 70%;
-    border: 5px groove rgb(247, 25, 0);
-}
-
-#specialPlace {
-    font-family: 'Fruktur', cursive;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-family: 'Fruktur', cursive;
-    font-size: calc(16px + .5vw);
-}
-
+/* Shadow behind bio */
 #descriptionDiv {
     box-shadow: 0px 0px 15px rgb(247, 25, 0);
 }
 
+/* Bio font */
+#description{
+    font-family: 'Fruktur', cursive;
+    font-size: calc(16px + .5vw);
+    padding: 10px 40px 0px 40px;
+    margin-left: 10px;
+}
+
+/* Character name */
 h3 {
     font-family: 'Fruktur', cursive;
     text-align: center;
@@ -60,7 +52,5 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
-#description {
-    padding: 10px 40px 0px 40px;
-    margin-left: 10px;
-}
+
+

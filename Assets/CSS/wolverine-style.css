@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Germania One', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,12 +12,7 @@ img {
     box-shadow: 0px 0px 15px black;
 }
 
-#img-div {
-    font-family: 'Germania One', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Button */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -21,22 +23,7 @@ img {
     background-color: rgb(198, 201, 21);
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 100px; 
-    width: 70%;
-    border: 5px groove black;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-family: 'Germania One', cursive;
-    font-size: calc(16px + .5vw);
-}
-
+/* Character name */
 h3 {
     font-family: 'Germania One', cursive;
     text-align: center;
@@ -49,7 +36,11 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
-#description {
+/* Bio font */
+#description{
+    font-family: 'Germania One', cursive;
+    font-size: calc(16px + .5vw);
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
 }
+

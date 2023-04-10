@@ -6,6 +6,7 @@ var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
 var charName = "captain america"
 var wikiPageName = "Captain_America"
 
+// Gets char name and pic from Marvel API and applies to page
 async function getCharData(charName) {
     try {
         var queryURL = "https://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
@@ -26,6 +27,7 @@ async function getCharData(charName) {
     }
 }
 
+// Gets bio from wikipedia, edits text, applies to page
 async function wikipedia (wikiPageName) {
     try {
         var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=extracts&titles=" + wikiPageName + "&formatversion=2&exsentences=10&exlimit=1&explaintext=1"

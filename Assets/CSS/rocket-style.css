@@ -2,6 +2,13 @@ main{
     padding-top:40px;
 }
 
+/* Img container */
+#img-div {
+    font-family: 'Acme', sans-serif;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: rgb(52, 119, 123);
@@ -9,12 +16,7 @@ img {
     box-shadow: 0px 0px 15px black;
 }
 
-#img-div {
-    font-family: 'Acme', sans-serif;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -38,36 +40,9 @@ img {
     background-color: rgb(158, 173, 187);
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 100px; 
-    width: 70%;
-    border: 5px groove black;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
+/* Char name */
 #charName{
     color:black;
-}
-
-#charName{
-    color:black;
-}
-
-#description{
-    font-family: 'Acme', sans-serif;
-    font-size: calc(16px + .5vw);
-    padding: 10px 40px 10px 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 5px 5px 8px rgb(110, 109, 109);
-    color: black;
-    background-color: rgb(110, 209, 212);
-    border: groove 10px rgb(22, 58, 75); 
-    
 }
 
 h3 {
@@ -83,19 +58,16 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
-#specialPlacesText {
-    box-shadow: 5px 5px 5px rgb(110, 109, 109);
-    background-color: rgb(110, 209, 212);
-    border: groove 10px rgb(123, 119, 152);
-    height:auto;
-    
-}
-
-#specialPlacesText p {
+/* Bio text */
+#description{
+    font-family: 'Acme', sans-serif;
     font-size: calc(16px + .5vw);
-}
-
-#specialPlacesText h4 {
-    padding-top: 10px;
-    font-size: 50px;;
+    padding: 10px 40px 10px 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 8px rgb(110, 109, 109);
+    color: black;
+    background-color: rgb(110, 209, 212);
+    border: groove 10px rgb(22, 58, 75); 
+    
 }

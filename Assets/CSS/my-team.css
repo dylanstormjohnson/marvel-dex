@@ -1,33 +1,35 @@
+/* Char img sizes */
 img {
   height: 500px !important;
   width: 350px !important;
 }
 
-.remove-hero {
-  /* width: 50px !important; */
-}
-
+/* Height of empty hero boxes */
 .add-hero {
   height: 20vh;
 }
 
+/* Team member name size */
 .team p{
   font-size: 30px;
   padding-top: 20px;
   margin-bottom: 0px;
 }
 
+/* Team member name font */
 #teammateName {
   font-family: 'Faster One', cursive;
   color:rgb(18, 157, 18);
 }
 
+/* Team name */
 #teamName {
   font-family: 'Bangers', cursive;
   color: Purple;
   
 }
 
+/* Icon states */
 i:hover {
   filter: brightness(150%);
   text-shadow: 0px 0px 20px gold;

@@ -18,13 +18,12 @@
 </head>
 <body>
   <header>
-
+    <!-- Nav Bar -->
     <nav id="custom-navBar" class="bd-gutter flex-wrap flex-lg-nowrap navbar-expand-lg">
       <div id="navbar" class="container-fluid ms-0 me-0">
-
         <ul class="">
           <li id="home" class="px-3"><a href="./index.html">Home</a></li>
-          
+          <!-- Drop-down teams menu -->
           <li class="px-3">
             <div id="marvelTeamsNavBar">
                   <button id="dropdownNavBtn">Marvel Teams
@@ -38,14 +37,13 @@
                   </div>
             </div>
           </li>
-
           <li id="yourTeam" class="px-3"><a href="./my-team.html">Your Team</a></li>
           <li id="marvelLink" class="px-3" ><a href="https://www.marvel.com/">Marvel.com</a></li>
         </ul>
       </div>
     </nav>
   </header>
-    <!-- Modal -->
+    <!-- Alert Modal -->
     <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -66,13 +64,14 @@
     </div>  
     <main>
         <section class="d-flex row justify-content-center g-0 m-0" id="Marvel">
+            <!-- Hero Img Card -->
             <div class="align-self-center col-lg-4 col-md-9 col-sm-9 col-9">
                 <div id="img-div">
                     <img id="heroPic" src="">
                     <button class="btn btn-dark btn-outline-warning" id="addToTeam">Add To Team!</button>
                 </div>
             </div>
-            
+            <!-- Hero Bio Card -->
             <div id="char-bio" class="d-flex flex-column col-lg-7">
                 <h3 class="align-self-center" id="charName"></h3>
                 <div class="bg-dark bg-gradient text-warning rounded" id="descriptionDiv">

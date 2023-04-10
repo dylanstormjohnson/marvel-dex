@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Aladin', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,12 +12,7 @@ img {
     box-shadow: 0px 0px 15px black;
 }
 
-#img-div {
-    font-family: 'Aladin', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -21,6 +23,7 @@ img {
     background-color: black;
 }
 
+/* Char name */
 h3 {
     font-family: 'Aladin', cursive;
     text-align: center;
@@ -34,12 +37,13 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
+/* Bio text */
 #description {
     font-family: 'Aladin', cursive;
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
     margin-top: 6px;
-    font-size: calc(17px + .7vw);
+    font-size: calc(17px + .9vw);
     background-color: rgb(21, 12, 70);
     color: white;
     border: groove rgb(255, 0, 0) 5px; 

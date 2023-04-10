@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Arbutus', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,16 +12,11 @@ img {
     box-shadow: 0px 0px 15px black;
 }
 
-#img-div {
-    font-family: 'Arbutus', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
 #heroPic {
     width: 300px;
 }
 
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     font-size: 20px;
@@ -39,22 +41,7 @@ img {
     background-color: rgb(255, 255, 255);
 }
 
-#char-bio {
-    padding-right: 15px;
-}
-
-#description{
-    font-family: 'Arbutus', cursive;
-    font-size: calc(10px + .5vw);
-    padding: 10px 40px 10px 40px;
-    margin-left: 10px;
-    box-shadow: 5px 5px 8px rgb(110, 109, 109);
-    color: white;
-    background-color: rgb(0, 0, 0);
-    border: groove 5px rgb(152, 19, 172); 
-
-}
-
+/* Char Name */
 h3 {
     font-family: 'Arbutus', cursive;
     text-align: center;
@@ -68,3 +55,20 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
     margin-bottom: 20px;
 }
+
+/* Char bio text */
+#char-bio {
+    padding-right: 15px;
+}
+
+#description{
+    font-family: 'Arbutus', cursive;
+    font-size: calc(15px + .5vw);
+    padding: 10px 40px 10px 40px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 8px rgb(110, 109, 109);
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: groove 5px rgb(152, 19, 172); 
+}
+

@@ -1,3 +1,9 @@
+/* Img container */
+#img-div {
+    font-family: 'Bangers', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,12 +11,7 @@ img {
     box-shadow: 0px 0px 15px rgb(221, 28, 18);
 }
 
-#img-div {
-    font-family: 'Bangers', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -21,31 +22,7 @@ img {
     background-color: blue;
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 95px; 
-    width: 70%;
-    border: 5px groove rgb(221, 28, 18);
-}
-
-#specialPlace {
-    font-family: 'Bangers', cursive;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-family: 'Bangers', cursive;
-    font-size: calc(16px + .5vw);
-}
-
-#descriptionDiv {
-    position: relative;
-    box-shadow: 0px 0px 15px rgb(221, 28, 18);
-}
-
+/* Char name */
 h3 {
     font-family: 'Bangers', cursive;
     text-align: center;
@@ -59,9 +36,17 @@ h3 {
     box-shadow: 5px 5px 5px rgb(221, 28, 18);
 }
 
+/* Char bio box and text */
+#descriptionDiv {
+    position: relative;
+    box-shadow: 0px 0px 15px rgb(221, 28, 18);
+}
+
 #description {
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
+    font-family: 'Bangers', cursive;
+    font-size: calc(16px + .5vw);
 }
 
 .americanFlag {
