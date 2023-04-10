@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Jolly Lodger', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     min-width: 300px;
@@ -6,12 +13,7 @@ img {
     box-shadow: 0px 0px 15px black;
 }
 
-#img-div {
-    font-family: 'Jolly Lodger', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -22,6 +24,7 @@ img {
     background-color: gray;
 }
 
+/* Char name */
 h3 {
     font-family: 'Jolly Lodger', cursive;
     text-align: center;
@@ -35,9 +38,10 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
+/* Bio text */
 #description {
     font-family: 'Jolly Lodger', cursive;
-    font-size: calc(16px + .7vw);
+    font-size: calc(20px + .7vw);
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
     background: black;

@@ -1,3 +1,10 @@
+/* Img Container */
+#img-div {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,12 +12,7 @@ img {
     box-shadow: 0px 0px 15px purple;
 }
 
-#img-div {
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -21,30 +23,7 @@ img {
     background-color: green;
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 120px; 
-    width: 70%;
-    border: 5px groove purple;
-}
-
-#specialPlace {
-    font-family: 'Roboto', sans-serif;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-family: 'Roboto', sans-serif;
-    font-size: calc(16px + .5vw);
-}
-
-#descriptionDiv {
-    box-shadow: 0px 0px 15px purple;
-}
-
+/* Char Name */
 h3 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -58,7 +37,17 @@ h3 {
     box-shadow: 5px 5px 5px purple;
 }
 
+/* Bio box and text */
+#descriptionDiv {
+    box-shadow: 0px 0px 15px purple;
+}
+
 #description {
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(16px + .5vw);
 }
+
+
+

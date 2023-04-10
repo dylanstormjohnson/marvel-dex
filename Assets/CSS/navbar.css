@@ -13,7 +13,6 @@ main{
 
 }
 
-
 body{ 
   margin:0 auto;
   /* padding-top: 50px !important; */
@@ -58,13 +57,11 @@ nav ul a:active{
   height: auto;
 }
 
-
 #marvelTeamsNavBar{
   float:left;
   overflow:hidden;
   /* height: 200px; */
 }
-
 
 #dropdownNavBtn, #marvelTeamsNavBar{
   border:none;
@@ -75,7 +72,6 @@ nav ul a:active{
   color: inherit;
   margin:0;
 }
-
 
 #dropdown-menu{
   display: none;
@@ -171,17 +167,6 @@ footer{
   font-size:0.7rem;
   }
 }
-
-
-/* #xForce, #avengers  {
-padding-left:20%;
-
-}
-
-#xMen, #guardians{
-padding-right: 20%;
-
-} */
 
 #marvelTeams img{
   width: 250px;

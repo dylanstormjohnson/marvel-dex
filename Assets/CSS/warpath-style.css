@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Metal Mania', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,12 +12,7 @@ img {
     box-shadow: 0px 0px 15px rgb(44, 16, 201);
 }
 
-#img-div {
-    font-family: 'Metal Mania', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -21,26 +23,7 @@ img {
     background-color: rgb(172, 18, 18);
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 70px; 
-    width: 70%;
-    border: 5px groove rgb(44, 16, 201);
-}
-
-#specialPlace {
-    font-family: 'Metal Mania', cursive;
-}
-
-#description{
-    font-size: calc(16px + .5vw);
-    font-family: 'Metal Mania', cursive;
-}
-
-#descriptionDiv {
-    box-shadow: 0px 0px 15px rgb(44, 16, 201);
-}
-
+/* Char name */
 h3 {
     font-family: 'Metal Mania', cursive;
     text-align: center;
@@ -54,8 +37,20 @@ h3 {
     box-shadow: 5px 5px 5px rgb(44, 16, 201);
 }
 
-#description {
+/* Bio box and text */
+#descriptionDiv {
+    box-shadow: 0px 0px 15px rgb(44, 16, 201);
+}
+
+#description{
+    font-size: calc(16px + .5vw);
+    font-family: 'Metal Mania', cursive;
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
 }
+
+
+
+
+
 

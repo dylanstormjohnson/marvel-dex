@@ -7,6 +7,7 @@ var charName = "magneto"
 var wikiPageName = "Magneto_(Marvel_Comics)"
 var imgName = "File:Magneto_(Marvel_Comics_character).jpg"
 
+// Gets character name from Marvel API and applies to page
 async function getCharData(charName) {
     try {
         var queryURL = "https://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
@@ -23,9 +24,9 @@ async function getCharData(charName) {
         $('#modal-main-txt').text("Error: Files not found!")
         $('#errorModal').modal('show')
     }
-
 }
 
+// Gets bio from wikipedia, edits text, applies to page
 async function wikipedia (wikiPageName) {
     try {
         var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=extracts&titles=" + wikiPageName + "&formatversion=2&exsentences=10&exlimit=1&explaintext=1"
@@ -47,10 +48,9 @@ async function wikipedia (wikiPageName) {
         $('#modal-main-txt').text("Error: Files not found!")
         $('#errorModal').modal('show')
     }
-
-    
 }
 
+// Gets character picture url from Wikipedia based on img name and applies to page
 async function wikiPic (imgName) {
     try{
         var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=imageinfo&titles=" + imgName + "&formatversion=2&iiprop=url"

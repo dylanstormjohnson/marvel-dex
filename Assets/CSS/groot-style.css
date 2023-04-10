@@ -2,6 +2,13 @@ main{
     padding-top:20px;
 }
 
+/* Img Container */
+#img-div {
+    font-family: 'Akronim', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -9,16 +16,11 @@ img {
     box-shadow: 0px 0px 15px black;
 }
 
-#img-div {
-    font-family: 'Akronim', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
 #heroPic{
     width: 400px;
 }
 
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -43,30 +45,7 @@ img {
     background-color: aliceblue;
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 100px; 
-    width: 70%;
-    border: 5px groove black;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-family: 'Akronim', cursive;
-    font-size: calc(16px + .5vw);
-    padding: 10px 40px 10px 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 5px 5px 8px rgb(110, 109, 109);
-    color: black;
-    background-color: rgb(116, 144, 86);
-    border: groove 10px rgb(62, 29, 68); 
-    font-weight: 600;
-}
-
+/* Char name */
 h3 {
     font-family: 'Akronim', cursive;
     text-align: center;
@@ -81,21 +60,18 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
-#specialPlacesText {
-    box-shadow: 5px 5px 5px rgb(110, 109, 109);
+/* Bio text */
+#description{
+    font-family: 'Akronim', cursive;
+    font-size: calc(16px + .5vw);
+    padding: 10px 40px 10px 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 8px rgb(110, 109, 109);
+    color: black;
     background-color: rgb(116, 144, 86);
     border: groove 10px rgb(62, 29, 68); 
-    height:auto;
-    
-}
-
-#specialPlacesText p {
-    font-size: calc(16px + .5vw);
-}
-
-#specialPlacesText h4 {
-    padding-top: 10px;
-    font-size: 50px;;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 535px){ 

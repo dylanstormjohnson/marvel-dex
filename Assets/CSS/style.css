@@ -1,58 +1,84 @@
+
+/* All pages: Apply style to all fonts on the website */
 *{
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Marvel', sans-serif;
-
 }
 
+/* All pages: Fixes spacing issues */
 body{ 
   margin:0 auto;
   padding:0;
 }
 
+/* All pages: Add grading background and ensure reaches bottom of page */
 main {
   background: rgb(244,232,234);
   background: linear-gradient(0deg, rgba(244,232,234,1) 0%, rgba(247,217,210,1) 35%, rgba(187,75,91,0.38139005602240894) 100%);
   padding-bottom: 30px;
 }
 
-#imgXForce, #imgXMen, #imgAvengers, #imgGuardians {
-  background-color: brown;
-  max-width: 100%;
-  justify-content: center;
-
-
+/* All pages: Modal footer and header */
+.modal-header, .modal-footer{
+  background-color: rgb(206, 55, 55);
 }
 
-#xForce a, #xMen a, #avengers a, #guardians a {
-  text-decoration: none;
-  color:black;
+/* All pages: Modal body text */
+.modal-body{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#xForce p, #xMen p, #avengers p, #guardians p {
-  font-size: 40px !important;
-  font-weight: bold !important;
+/* All pages: Modal title */
+#exampleModalLongTitle{
+  color: white;
+  font-size: 30px;
 }
 
-.imagesRow{
-  padding-top: 50px;
-  justify-content: center !important;
-}
-
+/* All pages: footer padding */
 footer div {
   padding-top: 10px;
 }
 
-
+/* All pages: footer links/text */
 #copyrights a, #copyrights p {
   color: white; 
   font-size: calc(5px + .5vw);
   line-height: 3px;
 }
 
+/* All pages: adds padding to Marvel.com link in footer */
 #copyrights a{
   padding-right: 20px;
 }
 
+/* Home page: Comic book images*/
+#imgXForce, #imgXMen, #imgAvengers, #imgGuardians {
+  background-color: brown;
+  max-width: 100%;
+  justify-content: center;
+}
+
+/* Home page: Text links above comic imgs */
+#xForce a, #xMen a, #avengers a, #guardians a {
+  text-decoration: none;
+  color:black;
+}
+
+/* Home page: font changes to team names above comics */
+#xForce p, #xMen p, #avengers p, #guardians p {
+  font-size: 40px !important;
+  font-weight: bold !important;
+}
+
+/* Home page: Rows of comics */
+.imagesRow{
+  padding-top: 50px;
+  justify-content: center !important;
+}
+
+/* Home page: dropdown bar */
 #dropdownSearch {
   background: rgb(8,0,1);
   background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
@@ -63,14 +89,6 @@ footer div {
   width:inherit;
 }
 
-#dropdownSearch:hover{
-  opacity: 0.5;
-}
-
-#dropdownSearch:active{
-  color:rgb(198, 130, 41);
-}
-
 #dropdownMenuBtn{
   background: rgb(8,0,1);
   background: linear-gradient(0deg, rgba(8,0,1,1) 0%, rgba(73,20,6,1) 35%, rgba(190,11,36,1) 100%);
@@ -79,11 +97,22 @@ footer div {
   padding: 0 2px 5px 5px;
 }
 
+/* Home page: dropdown bar states */
+#dropdownSearch:hover{
+  opacity: 0.5;
+}
+
+#dropdownSearch:active{
+  color:rgb(198, 130, 41);
+}
+
+/* My team: container for team name */
 #titleContainer{
   position: relative;
   size: auto;
 }
 
+/* My team: pencil icon format and hover state  */
 .fa-pen{
   position: absolute;
   top: 1.5rem;
@@ -96,23 +125,15 @@ footer div {
   font-size: 20px;
 }
 
-
-
-  /* #dropdown{
-    align-content: center;
-  } */
-  
-
+/* Home Page: dropdown menu adjustments */
 @media screen and (max-width: 535px){ 
   #dropdownMenuBtn{
     font-size: 1rem;
   }
   #dropdownSearch {
     font-size: 1rem;
-
   }
 }
-
 
 @media screen and (max-width: 413px){ 
   #dropdownMenuBtn{
@@ -130,23 +151,7 @@ footer div {
   #dropdownMenuBtn{
   font-size:0.6rem;
   }
-
   #dropdownSearch {
     font-size: 0.6rem;
-
   }
 }
-
-@media screen and (max-width: 776px){ 
-  /* #xMen p, #guardians p {
-    padding-top: 40px;
-  } */
-}
-
-/* @media screen and (min-width: 989px){ 
-  .imagesRow img{
-
-  }
-
-} */
-

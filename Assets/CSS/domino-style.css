@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Akaya Telivigala', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,12 +12,7 @@ img {
     box-shadow: 0px 0px 15px black;
 }
 
-#img-div {
-    font-family: 'Akaya Telivigala', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -21,22 +23,7 @@ img {
     background-color: black;
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 100px; 
-    width: 70%;
-    border: 5px groove black;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-family: 'Akaya Telivigala', cursive;
-    font-size: calc(16px + .5vw);
-}
-
+/* Char name */
 h3 {
     font-family: 'Akaya Telivigala', cursive;
     text-align: center;
@@ -50,7 +37,10 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
+/* Char bio text */
 #description {
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: calc(16px + .5vw);
 }

@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Tapestry', cursive;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,12 +12,7 @@ img {
     box-shadow: 0px 0px 15px gold;
 }
 
-#img-div {
-    font-family: 'Tapestry', cursive;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-}
-
+/* Btn */
 #addToTeam {
     text-decoration: underline;
     position: absolute;
@@ -21,30 +23,7 @@ img {
     background-color: rgb(50, 49, 49);
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 95px; 
-    width: 70%;
-    border: 5px groove gold;
-}
-
-#specialPlace {
-    font-family: 'Tapestry', cursive;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-size: calc(16px + .5vw);
-    font-family: 'Tapestry', cursive;
-}
-
-#descriptionDiv {
-    box-shadow: 0px 0px 15px gold;
-}
-
+/* Char Name */
 h3 {
     font-family: 'Tapestry', cursive;
     text-align: center;
@@ -58,7 +37,14 @@ h3 {
     box-shadow: 5px 5px 5px gold;
 }
 
-#description {
+/* Bio container and text */
+#descriptionDiv {
+    box-shadow: 0px 0px 15px gold;
+}
+
+#description{
+    font-size: calc(16px + .5vw);
+    font-family: 'Tapestry', cursive;
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
 }

@@ -1,7 +1,9 @@
+/* Char imgs */
 img {
   max-width: 100%;
 }
 
+/* Used to homogenize img sizes */
 #groot img {
   max-width: 254px;
   height: 392px;

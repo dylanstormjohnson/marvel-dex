@@ -6,6 +6,7 @@ var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
 var charName = "yondu"
 var wikiPageName = "Yondu"
 
+// Gets character name from Marvel API and applies to page
 async function getCharData(charName) {
     try {
         var queryURL = "https://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
@@ -24,6 +25,7 @@ async function getCharData(charName) {
     }
 }
 
+// Gets bio from wikipedia, edits text, applies to page
 async function wikipedia (wikiPageName) {
     try {
         var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=extracts&titles=" + wikiPageName + "&formatversion=2&exsentences=10&exlimit=1&explaintext=1"
@@ -47,6 +49,7 @@ async function wikipedia (wikiPageName) {
     }
 }
 
+// Gets pic name from wikipedia, then runs second query to get image url, then applies url to html
 async function wikiPic (wikiPageName) {
     try {
         var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&formatversion=2&prop=images&titles=" + wikiPageName
@@ -67,9 +70,8 @@ async function wikiPic (wikiPageName) {
         $('#modal-main-txt').text("Error: Files not found!")
         $('#errorModal').modal('show')
     }
-
 }
 
 wikipedia(wikiPageName);
 getCharData(charName);
-wikiPic(wikiPageName)
+wikiPic(wikiPageName);

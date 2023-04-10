@@ -1,3 +1,10 @@
+/* Img container */
+#img-div {
+    font-family: 'Aclonica', sans-serif;
+    position: relative;
+    padding: 40px 15px 15px 15px;
+}
+
 img {
     max-width: 100%;
     background-color: purple;
@@ -5,13 +12,7 @@ img {
     box-shadow: 0px 0px 15px black;
 }
 
-#img-div {
-    font-family: 'Aclonica', sans-serif;
-    position: relative;
-    padding: 40px 15px 15px 15px;
-
-}
-
+/* Btn */
 #addToTeam {
     font-family: 'Aclonica', sans-serif;
     text-decoration: underline;
@@ -23,22 +24,7 @@ img {
     background-color: black;
 }
 
-#specialPlacesText {
-    text-align: center;
-    height: 100px; 
-    width: 70%;
-    border: 5px groove black;
-}
-
-#GoogleMaps {
-    padding-top:2vw;
-}
-
-#description{
-    font-family: 'Aclonica', sans-serif;
-    font-size: calc(16px + .5vw);
-}
-
+/* Char name */
 h3 {
     font-family: 'Aclonica', sans-serif;
     text-align: center;
@@ -52,7 +38,10 @@ h3 {
     box-shadow: 5px 5px 5px rgb(110, 109, 109);
 }
 
+/* Bio text */
 #description {
+    font-family: 'Aclonica', sans-serif;
+    font-size: calc(16px + .5vw);
     padding: 10px 40px 0px 40px;
     margin-left: 10px;
 }

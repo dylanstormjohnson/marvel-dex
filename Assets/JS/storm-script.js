@@ -7,6 +7,7 @@ var charName = "storm"
 var wikiPageName = "Storm_(Marvel_Comics)"
 var imgName = "File:Storm_(Ororo_Munroe).png";
 
+// Gets character name from Marvel and applies to page
 async function getCharData(charName) {
     try {
         var queryURL = "https://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
@@ -25,6 +26,7 @@ async function getCharData(charName) {
     }
 }
 
+// Gets bio from wikipedia, edits text, applies to page
 async function wikipedia (wikiPageName) {
     try {
         var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=extracts&titles=" + wikiPageName + "&formatversion=2&exsentences=10&exlimit=1&explaintext=1"
@@ -47,6 +49,7 @@ async function wikipedia (wikiPageName) {
     }
 }
 
+// Takes name of image to wiki API, gets url, and applies img url to page
 async function wikiPic (imgName) {
     try{
         var queryURL = "https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&prop=imageinfo&titles=" + imgName + "&formatversion=2&iiprop=url"
