@@ -48,11 +48,10 @@ function marvelTeam() {
 // 4 characters in each team, create an h3, add an image, and a link to the bio page
   for (var i=0; i<4; i++){
     var charName = $("<h3>")
-    var linkText = linkArr[i];
     charName.text(charArr[i])
     idArr[i].append(charName);
     // add link behind h3
-    $(charName).wrap("<a href='./" + linkText + ".html'>");
+    $(charName).wrap("<a href='./" + linkArr[i] + ".html'>");
     charName.addClass("pt-4 text-dark")
 
   }
@@ -119,7 +118,8 @@ async function getMarvelImg(charArr, idArr) {
       charImg.addClass("img-fluid");
       idArr.append(charImg);
       // add link to bios page behind image
-      $(charImg).wrap("<a href='./" + linkText + ".html'>");
+      $(charImg).wrap("<a href='./" + linkArr[i] + ".html'>");
+      console.log(linkArr)
   } catch(err) {
       console.log("error-not 404")
       $('#modal-main-txt').text("Error: Files not found!")
