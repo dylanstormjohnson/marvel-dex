@@ -21,3 +21,8 @@ img {
   max-width: 254px;
   height: 392px;
 }
+
+#nightCrawler a img, #gambit a img, #storm a img, #magneto a img {
+  width: 281px;
+  height: 385px;
+}
