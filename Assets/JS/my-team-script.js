@@ -2,6 +2,7 @@ var myTeamArr = {
   teamName: "", 
   teamComp: []
 }
+
 var teamPick = $('.team')
 var characterContainerDivEl = $("#character-container");
 var apiKey = "d2cfd98c8f587c9ae382ce0a8ada3b38";
@@ -13,10 +14,11 @@ function init() {
 
   for (var i = 0; i < myTeam.teamComp.length; i++) {
     var charName = myTeam.teamComp[i];
+    var idName = charName.replace(/\s/g, "")
     var html = `
     <div class="team col-sm-12 col-lg-3 col-md-6 d-flex flex-column align-items-center" id="playerOne">
       <p id=teammateName>${charName}</p>
-      <img src="" class="img-fluid" id=${charName} alt="Marvel Character">
+      <img src="" class="img-fluid" id="${idName}" alt="Marvel Character">
       <button class='remove-hero btn btn-danger btn-outline-warning'>Remove Hero</button>
     </div>
     `
@@ -92,8 +94,6 @@ function saveMyTeam(myTeamArr) {
   localStorage.setItem("myTeamCharacters", JSON.stringify(myTeamArr))
 }
 
-
-
 function loadPic(name) {
   switch (name) {
     case "Captain America":
@@ -156,7 +156,7 @@ function loadPic(name) {
 
 async function marvelApiPic(name) {
     try {
-        var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ name +  "&apikey=" + apiKey;
+        var queryURL = "https://gateway.marvel.com/v1/public/characters?name="+ name +  "&apikey=" + apiKey;
         var rawData = await fetch(queryURL);
         if (rawData.status !== 200) {
             $('#modal-main-txt').text("Error: Files not found!");
@@ -164,8 +164,10 @@ async function marvelApiPic(name) {
             return;
             }
         var data = await rawData.json();
+        console.log(data);
         var picUrl = data.data.results[0].thumbnail.path+".jpg";
-        $(`#${name}`).attr("src", picUrl)
+        var idName = name.replace(/\s/g, "")
+        $(`#${idName}`).attr("src", picUrl)
     } catch(err) {
         $('#modal-main-txt').text("Error: Files not found!");
         $('#errorModal').modal('show');

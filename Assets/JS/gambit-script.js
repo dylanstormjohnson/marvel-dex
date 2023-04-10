@@ -9,7 +9,7 @@ var imgName = "File:Gambit_(Marvel_Comics).png";
 
 async function getCharData(charName) {
         try {
-        var queryURL = "http://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
+        var queryURL = "https://gateway.marvel.com/v1/public/characters?name="+ charName +  "&apikey=" + apiKey;
         var rawData = await fetch(queryURL)
         if (rawData.status !== 200) {
             $('#modal-main-txt').text("Error: Files not found!")
