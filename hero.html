@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Assets/CSS/navbar.css">
+  <link rel="stylesheet" href="./Assets/CSS/style.css">
+  <link rel="stylesheet" href="./Assets/CSS/groot-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Marvel:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+
+  <title>Hero</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Nav Bar -->
+    <nav id="custom-navBar" class="bd-gutter flex-wrap flex-lg-nowrap navbar-expand-lg">
+      <div id="navbar" class="container-fluid ms-0 me-0">
+        <ul class="">
+          <li id="home" class="px-3"><a href="./index.html">Home</a></li>
+          <!-- Drop-down teams menu -->
+          <li class="px-3">
+            <div id="marvelTeamsNavBar">
+              <button id="dropdownNavBtn">Marvel Teams
+                <i class="caret-custom fa-sharp fa-solid fa-caret-down"></i>
+              </button>
+              <div id="dropdown-menu">
+                <a class="dropdown-item" href="./x-force.html">X-Force</a>
+                <a class="dropdown-item" href="./x-men.html">X-Men</a>
+                <a class="dropdown-item" href="./avengers.html">Avengers</a>
+                <a class="dropdown-item" href="./guardians.html">Guardians</a>
+              </div>
+            </div>
+          </li>
+          <li id="yourTeam" class="px-3"><a href="./my-team.html">Your Team</a></li>
+          <li id="marvelLink" class="px-3"><a href="https://www.marvel.com/">Marvel.com</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Alert Modal -->
+  <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Egads, true believers!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="modal-main-txt"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="d-flex row justify-content-center g-0 m-0" id="Marvel">
+      <!-- Hero Img Card -->
+      <div class="d-flex justify-content-center align-self-center col-lg-3 col-md-9 col-sm-9 col-9">
+        <div class="d-flex justify-content-center align-items-center" id="img-div">
+          <img id="heroPic" src="">
+          <button class="btn btn-info btn-outline-danger" id="addToTeam">
+            Add To Team!
+          </button>
+        </div>
+      </div>
+      <!-- Hero Bio Card -->
+      <div id="char-bio" class="d-flex flex-column col-lg-7">
+        <h3 class="align-self-center" id="charName"></h3>
+        <p id="description"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fs-3 text-center" id="copyrights"></footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="./Assets/JS/script.js"></script>
+  <script src="./Assets/JS/allHeros.js"></script>
+  <script src="./Assets/JS/hero.js"></script>
+
+</body>
+
+</html>
